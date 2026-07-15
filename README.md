@@ -24,8 +24,25 @@ streamlit run streamlit_app.py
 Deploy free on [Streamlit Community Cloud](https://share.streamlit.io):
 **New app** → select this repo (`ennoenno98/OOSshopify`), branch
 `claude/oos-lost-revenue-dashboard-8z8rzj`, main file `streamlit_app.py` →
-Deploy. Works with private repos (grant the Streamlit GitHub app access);
-set the app itself to private if only your team should see it.
+Deploy. Works with private repos (grant the Streamlit GitHub app access).
+
+### Protecting the app
+
+Two options, combinable:
+
+- **Password gate (built into the app).** In the deployed app go to
+  **Settings → Secrets** and add:
+
+  ```toml
+  APP_PASSWORD = "choose-a-password"
+  ```
+
+  Viewers must enter it before anything renders. Without this secret the
+  app runs open (handy for local use; locally you can set it in
+  `.streamlit/secrets.toml`, which is gitignored).
+
+- **Private app (Streamlit accounts).** **Settings → Sharing** → make the
+  app private and invite viewers by email; they sign in with Google/GitHub.
 
 ## How it works
 

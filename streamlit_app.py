@@ -21,6 +21,35 @@ st.set_page_config(page_title="OOS Lost Revenue — Vegavero", page_icon="📉",
                    layout="wide")
 
 
+def check_password() -> bool:
+    """Gate the app behind APP_PASSWORD when that secret is configured.
+
+    Set it in Streamlit Cloud (app → Settings → Secrets):
+        APP_PASSWORD = "your-password"
+    With no secret configured (e.g. running locally), the app stays open.
+    """
+    expected = st.secrets.get("APP_PASSWORD", "")
+    if not expected:
+        return True
+    if st.session_state.get("pw_ok"):
+        return True
+
+    def _submit():
+        import hmac
+        st.session_state["pw_ok"] = hmac.compare_digest(
+            st.session_state.get("pw_input", ""), expected)
+        st.session_state["pw_input"] = ""  # never keep the password around
+
+    st.text_input("Password", type="password", key="pw_input",
+                  on_change=_submit)
+    if st.session_state.get("pw_ok") is False:
+        st.error("Wrong password.")
+    st.stop()
+
+
+check_password()
+
+
 @st.cache_data
 def load():
     summary = json.loads((RESULTS / "summary.json").read_text())
