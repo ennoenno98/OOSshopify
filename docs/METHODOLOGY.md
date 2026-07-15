@@ -75,12 +75,12 @@ Bridged days that still carry some sales are labelled *Suppressed sales
 
 | Category | Rule | Booked as |
 | --- | --- | --- |
-| **Listing blocked (in stock)** | units = 0 with **reach > 15 days** (`BLOCKED_MIN_REACH`) and λ ≥ 3. Plenty of stock but no sales → a storefront/listing problem (hidden, unpublished, broken page), not a stock-out. | **Unrealized** revenue, excluded from OOS totals |
+| **Ample-stock zero day** | units = 0 with **reach > 15 days** (`BLOCKED_MIN_REACH`) and λ ≥ 3. This store has no listing suppression, so a no-sale day with plenty of stock is ordinary demand variation (bulk/lumpy sellers, weekends) — the guard exists so such days can never be misread as demand gaps. | Nothing — ordinary in-stock day |
 | **Discontinued** | Product status is not ACTIVE (archived/draft/unlisted) and the day is after the SKU's last sale. A deliberate delisting is not lost revenue. | Excluded entirely |
 | **Warm-up** | First 28 days of history — baselines still forming. | Excluded entirely |
 
-**Category priority per day:** Physical → Critically low → Demand gap →
-Listing blocked. Flags are mutually exclusive; no day is double-counted.
+**Category priority per day:** Physical → Critically low → Demand gap.
+Flags are mutually exclusive; no day is double-counted.
 
 ---
 
@@ -124,9 +124,9 @@ lost_revenue = lost_units × trailing-90d avg selling price per unit
   (`λ − units`), so the estimate self-corrects.
 - Sales rows with an empty SKU (deleted variants, custom items) are excluded.
 - Real sales are more variable than pure Poisson (weekends, promos, bulk/B2B
-  orders). SKUs that sell in infrequent bulk spikes can spuriously appear in
-  *Listing blocked*; that bucket is reported separately for exactly this
-  reason.
+  orders). SKUs that sell in infrequent bulk spikes have inflated λ between
+  spikes; the ample-stock guard keeps their ordinary no-sale days out of the
+  loss totals.
 
 ## Deviations from the Amazon original
 
@@ -136,6 +136,7 @@ lost_revenue = lost_units × trailing-90d avg selling price per unit
 | EU / GB regional pools | Single pool | One store, one fulfilment network |
 | Cooling-down / Heating-up categories (ad-cut & price throttles) | **Dropped** | Requires per-SKU ad spend; deliberately out of scope |
 | Positioned run-rate (promo uplift replaces λ) | **Dropped** | Part of the throttle logic above |
+| "Listing blocked" bucket (unrealized revenue) | **Downgraded to a guard** — such days are booked as ordinary in-stock days | This store has no listing suppression; the pattern is bulk/lumpy demand |
 | Country split of lost units | Not applicable | Single storefront |
 | Reach thresholds EU 4d / GB 12d | **2 days** | Own warehouse: no cross-border transfer lag |
 | FBA Inventory Ledger receipts | Inferred from day-over-day stock delta net of sales | Shopify analytics has no receipts table |

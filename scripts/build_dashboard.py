@@ -19,24 +19,27 @@ OUT = REPO / "dashboard" / "index.html"
 CATS = ["Physical", "Critically low", "Demand gap", "Suppressed sales (post-OOS)"]
 
 
-def payload() -> dict:
-    summary = json.loads((RESULTS / "summary.json").read_text())
-    weekly = pd.read_csv(RESULTS / "weekly.csv", parse_dates=["week"])
-    sku = pd.read_csv(RESULTS / "sku_summary.csv")
-    episodes = pd.read_csv(RESULTS / "episodes.csv")
-
-    weeks = []
-    for _, r in weekly.iterrows():
-        weeks.append({
-            "week": r["week"].strftime("%Y-%m-%d"),
+def _series(df: pd.DataFrame, key: str) -> list[dict]:
+    out = []
+    for _, r in df.iterrows():
+        out.append({
+            "t": r[key].strftime("%Y-%m-%d"),
             "cats": [round(float(r.get(c, 0) or 0), 2) for c in CATS],
             "lost": round(float(r["lost_revenue"]), 2),
             "actual": round(float(r["actual_revenue"]), 2),
-            "unrealized": round(float(r["unrealized_revenue"]), 2),
             "wisr": round(float(r["wisr"]), 4),
             "oos_rate": round(float(r["oos_rate"]), 4),
             "skus_oos": int(r["skus_oos"]),
         })
+    return out
+
+
+def payload() -> dict:
+    summary = json.loads((RESULTS / "summary.json").read_text())
+    weekly = pd.read_csv(RESULTS / "weekly.csv", parse_dates=["week"])
+    monthly = pd.read_csv(RESULTS / "monthly.csv", parse_dates=["month"])
+    sku = pd.read_csv(RESULTS / "sku_summary.csv")
+    episodes = pd.read_csv(RESULTS / "episodes.csv")
 
     top_sku = []
     for _, r in sku[sku["lost_revenue"] > 0].head(25).iterrows():
@@ -44,7 +47,8 @@ def payload() -> dict:
             "sku": r["sku"], "title": r["product_title"], "variant": r["variant_title"],
             "lost": round(float(r["lost_revenue"]), 2),
             "units": round(float(r["lost_units"]), 0),
-            "days": int(r["oos_days"]), "lam": round(float(r["lam"]), 2) if pd.notna(r["lam"]) else None,
+            "days": int(r["oos_days"]),
+            "lam": round(float(r["lam"]), 2) if pd.notna(r["lam"]) else None,
             "stock": None if pd.isna(r["stock_now"]) else int(r["stock_now"]),
             "state": r["category_now"],
         })
@@ -57,19 +61,10 @@ def payload() -> dict:
             "lost": round(float(r["lost_revenue"]), 2), "cat": r["main_category"],
         })
 
-    blocked = []
-    b = sku.sort_values("unrealized_revenue", ascending=False)
-    for _, r in b[b["unrealized_revenue"] > 0].head(8).iterrows():
-        blocked.append({
-            "sku": r["sku"], "title": r["product_title"],
-            "unrealized": round(float(r["unrealized_revenue"]), 2),
-            "days": int(r["blocked_days"]),
-            "lam": round(float(r["lam"]), 2) if pd.notna(r["lam"]) else None,
-            "stock": None if pd.isna(r["stock_now"]) else int(r["stock_now"]),
-        })
-
-    return {"summary": summary, "weeks": weeks, "topSku": top_sku,
-            "episodes": eps, "blocked": blocked,
+    return {"summary": summary,
+            "series": {"weekly": _series(weekly, "week"),
+                       "monthly": _series(monthly, "month")},
+            "topSku": top_sku, "episodes": eps,
             "generated": date.today().isoformat()}
 
 
@@ -83,7 +78,7 @@ HTML = r"""<meta charset="utf-8">
     --ink-1:#0b0b0b; --ink-2:#52514e; --ink-3:#898781;
     --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,.10);
     --s1:#2a78d6; --s2:#008300; --s3:#e87ba4; --s4:#eda100;
-    --accent:#2a78d6; --dim:#c3c2b7; --good:#006300; --bad:#d03b3b;
+    --accent:#2a78d6; --dim:#c3c2b7;
   }
   @media (prefers-color-scheme: dark) {
     :root:where(:not([data-theme="light"])) .viz-root {
@@ -92,7 +87,7 @@ HTML = r"""<meta charset="utf-8">
       --ink-1:#ffffff; --ink-2:#c3c2b7; --ink-3:#898781;
       --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,.10);
       --s1:#3987e5; --s2:#008300; --s3:#d55181; --s4:#c98500;
-      --accent:#3987e5; --dim:#52514e; --good:#0ca30c; --bad:#e66767;
+      --accent:#3987e5; --dim:#52514e;
     }
   }
   :root[data-theme="dark"] .viz-root {
@@ -101,7 +96,7 @@ HTML = r"""<meta charset="utf-8">
     --ink-1:#ffffff; --ink-2:#c3c2b7; --ink-3:#898781;
     --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,.10);
     --s1:#3987e5; --s2:#008300; --s3:#d55181; --s4:#c98500;
-    --accent:#3987e5; --dim:#52514e; --good:#0ca30c; --bad:#e66767;
+    --accent:#3987e5; --dim:#52514e;
   }
   .viz-root { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     background: var(--page); color: var(--ink-1); margin: 0; padding: 24px;
@@ -119,6 +114,15 @@ HTML = r"""<meta charset="utf-8">
   .tile .val { font-size: 24px; font-weight: 600; }
   .tile.hero .val { font-size: 40px; }
   .tile .sub2 { font-size: 11.5px; color: var(--ink-3); margin-top: 3px; }
+  .filters { display: flex; align-items: center; gap: 12px; margin: 22px 0 0; }
+  .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden; background: var(--surface-1); }
+  .seg button { font: inherit; font-size: 12.5px; padding: 6px 14px; border: 0;
+    background: transparent; color: var(--ink-2); cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button[aria-pressed="true"] { background: var(--accent); color: #fff;
+    font-weight: 600; }
+  .seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
   .card { background: var(--surface-1); border: 1px solid var(--border);
     border-radius: 10px; padding: 14px 16px; margin-bottom: 8px; }
   .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px;
@@ -152,16 +156,25 @@ HTML = r"""<meta charset="utf-8">
   <div class="sub" id="sub"></div>
   <div class="kpis" id="kpis"></div>
 
-  <h2>Lost revenue per week, by OOS category</h2>
+  <div class="filters">
+    <div class="seg" role="group" aria-label="Time granularity">
+      <button id="segW" aria-pressed="true">Weekly</button>
+      <button id="segM" aria-pressed="false">Monthly</button>
+    </div>
+  </div>
+
+  <h2 id="h-lost">Lost revenue per week, by OOS category</h2>
   <p class="note">Estimated revenue not earned because products were out of
   stock: expected demand (&lambda;, trailing 90-day rate over live days) minus
-  actual units, valued at each SKU's trailing average selling price.</p>
+  actual units, valued at each SKU's trailing average selling price. Zero-sale
+  days on SKUs with ample stock cover are treated as ordinary demand variation
+  and never counted.</p>
   <div class="card">
     <div class="legend" id="legend1"></div>
     <div id="chart1"></div>
   </div>
 
-  <h2>Weighted in-stock rate (WISR), weekly</h2>
+  <h2 id="h-wisr">Weighted in-stock rate (WISR), weekly</h2>
   <p class="note">Share of expected revenue (&lambda; &times; price) that was
   in stock — a stock-out on a big seller hurts more than one on a slow mover.</p>
   <div class="card"><div id="chart2"></div></div>
@@ -171,13 +184,6 @@ HTML = r"""<meta charset="utf-8">
 
   <h2>Largest OOS episodes</h2>
   <div class="card tblwrap"><table id="tblEp"></table></div>
-
-  <h2>Listing blocked — unrealized, not counted as lost</h2>
-  <p class="note">Days with zero sales despite &gt;15 days of stock cover and a
-  meaningful demand rate: a visibility/listing problem, not a stock-out. Kept
-  out of the OOS totals above. Caveat: SKUs that sell in infrequent bulk orders
-  can appear here spuriously.</p>
-  <div class="card tblwrap"><table id="tblBlocked"></table></div>
 
   <footer id="foot"></footer>
 </div><div class="tt" id="tt"></div></div>
@@ -192,18 +198,27 @@ const eurK = v => v >= 1000000 ? "€" + (v/1e6).toFixed(2) + "M"
   : v >= 10000 ? "€" + (v/1000).toFixed(1) + "k" : eur(v);
 const pct = v => (v*100).toFixed(1) + "%";
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+let grain = "weekly";
+const pts = () => D.series[grain];
+const tickLabel = t => grain === "monthly"
+  ? MON[+t.slice(5,7)-1] + " " + t.slice(2,4)
+  : t.slice(5);
+const bucketName = t => grain === "monthly"
+  ? MON[+t.slice(5,7)-1] + " " + t.slice(0,4)
+  : "Week of " + t;
 
 // ---- header + KPI row
 const T = D.summary.totals, P = D.summary.period;
 document.getElementById("sub").textContent =
-  `Shopify store · ${P.start} → ${P.end} · daily model, weekly view · data pulled ${D.generated}`;
+  `Shopify store · ${P.start} → ${P.end} · daily model · data pulled ${D.generated}`;
 const kpis = [
   ["Lost revenue", eurK(T.lost_revenue), `${Math.round(T.lost_units).toLocaleString()} units not sold`, true],
   ["Realized revenue", eurK(T.actual_revenue), "net sales, same period"],
   ["OOS rate", pct(T.oos_rate), "share of live SKU-days flagged OOS"],
   ["WISR", pct(T.wisr), "revenue-weighted in-stock rate"],
   ["SKUs affected", T.skus_affected, `${T.episodes} OOS episodes`],
-  ["Unrealized (blocked)", eurK(T.unrealized_revenue), "listing problems, excluded"],
 ];
 document.getElementById("kpis").innerHTML = kpis.map(([l,v,s,hero]) =>
   `<div class="tile${hero?" hero":""}"><div class="lbl">${l}</div><div class="val">${v}</div><div class="sub2">${s||""}</div></div>`).join("");
@@ -218,16 +233,16 @@ function showTT(html, x, y) {
 }
 const hideTT = () => tt.style.opacity = 0;
 
-// ---- chart 1: weekly stacked columns
+// ---- chart 1: stacked columns
 function chart1() {
-  const cols = COLS();
+  const data = pts(), cols = COLS();
   document.getElementById("legend1").innerHTML = CATS.map((c,i) =>
     `<span><span class="sw" style="background:${cols[i]}"></span>${c}</span>`).join("");
   const W = 1000, H = 300, m = {t:16, r:8, b:34, l:52};
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
-  const n = D.weeks.length;
-  const band = iw / n, bw = Math.min(24, Math.max(6, band - 5));
-  const max = Math.max(...D.weeks.map(w => w.lost)) * 1.08;
+  const n = data.length;
+  const band = iw / n, bw = Math.min(24, Math.max(6, band - 6));
+  const max = Math.max(...data.map(w => w.lost)) * 1.08;
   const y = v => m.t + ih * (1 - v / max);
   let s = "";
   const step = niceStep(max, 4);
@@ -236,7 +251,8 @@ function chart1() {
     s += `<text x="${m.l-8}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="var(--ink-3)">${v>=1000?(v/1000)+"k":v}</text>`;
   }
   s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(0)}" y2="${y(0)}" stroke="var(--baseline)" stroke-width="1"/>`;
-  D.weeks.forEach((w, i) => {
+  const every = Math.ceil(n / 12);
+  data.forEach((w, i) => {
     const x = m.l + i * band + (band - bw) / 2;
     let acc = 0;
     w.cats.forEach((v, k) => {
@@ -249,15 +265,15 @@ function chart1() {
       s += `<path d="${topRounded(x, y1 + (isTop?0:gap), bw, Math.max(0.5, h - gap), r)}" fill="${cols[k]}"/>`;
     });
     s += `<rect data-i="${i}" x="${m.l + i*band}" y="${m.t}" width="${band}" height="${ih}" fill="transparent"/>`;
-    if (i % Math.ceil(n/10) === 0)
-      s += `<text x="${x+bw/2}" y="${H-12}" text-anchor="middle" font-size="11" fill="var(--ink-3)">${w.week.slice(5)}</text>`;
+    if (i % every === 0)
+      s += `<text x="${x+bw/2}" y="${H-12}" text-anchor="middle" font-size="11" fill="var(--ink-3)">${tickLabel(w.t)}</text>`;
   });
   const el = document.getElementById("chart1");
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Weekly lost revenue stacked by category">${s}</svg>`;
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Lost revenue stacked by category">${s}</svg>`;
   el.querySelector("svg").addEventListener("mousemove", e => {
     const t = e.target.closest("[data-i]"); if (!t) { hideTT(); return; }
-    const w = D.weeks[+t.dataset.i];
-    showTT(`<div class="t">Week of ${w.week}</div>` +
+    const w = data[+t.dataset.i];
+    showTT(`<div class="t">${bucketName(w.t)}</div>` +
       CATS.map((c,k) => w.cats[k] > 0 ? `<div class="row"><span>${c}</span><b>${eur(w.cats[k])}</b></div>` : "").join("") +
       `<div class="row"><span>Total lost</span><b>${eur(w.lost)}</b></div>` +
       `<div class="row"><span>Realized</span><b>${eur(w.actual)}</b></div>` +
@@ -277,9 +293,10 @@ function niceStep(max, target) {
 
 // ---- chart 2: WISR line
 function chart2() {
+  const data = pts();
   const W = 1000, H = 220, m = {t:14, r:56, b:30, l:52};
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
-  const n = D.weeks.length;
+  const n = data.length;
   const x = i => m.l + (n === 1 ? iw/2 : i * iw / (n-1));
   const y = v => m.t + ih * (1 - v);
   let s = "";
@@ -287,34 +304,48 @@ function chart2() {
     s += `<line x1="${m.l}" x2="${W-m.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width="1"/>`;
     s += `<text x="${m.l-8}" y="${y(v)+4}" text-anchor="end" font-size="11" fill="var(--ink-3)">${v*100}%</text>`;
   }
-  const pts = D.weeks.map((w,i) => `${x(i)},${y(w.wisr)}`).join(" ");
-  s += `<polygon points="${m.l},${y(0)} ${pts} ${x(n-1)},${y(0)}" fill="var(--accent)" opacity="0.1"/>`;
-  s += `<polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
-  const last = D.weeks[n-1];
+  const ptsStr = data.map((w,i) => `${x(i)},${y(w.wisr)}`).join(" ");
+  s += `<polygon points="${m.l},${y(0)} ${ptsStr} ${x(n-1)},${y(0)}" fill="var(--accent)" opacity="0.1"/>`;
+  s += `<polyline points="${ptsStr}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+  const last = data[n-1];
   s += `<circle cx="${x(n-1)}" cy="${y(last.wisr)}" r="4.5" fill="var(--accent)" stroke="var(--surface-1)" stroke-width="2"/>`;
   s += `<text x="${x(n-1)+10}" y="${y(last.wisr)+4}" font-size="12" font-weight="600" fill="var(--ink-1)">${pct(last.wisr)}</text>`;
-  D.weeks.forEach((w,i) => {
-    if (i % Math.ceil(n/10) === 0)
-      s += `<text x="${x(i)}" y="${H-10}" text-anchor="middle" font-size="11" fill="var(--ink-3)">${w.week.slice(5)}</text>`;
+  const every = Math.ceil(n / 12);
+  data.forEach((w,i) => {
+    if (i % every === 0)
+      s += `<text x="${x(i)}" y="${H-10}" text-anchor="middle" font-size="11" fill="var(--ink-3)">${tickLabel(w.t)}</text>`;
   });
   s += `<line id="ch2x" y1="${m.t}" y2="${m.t+ih}" stroke="var(--baseline)" stroke-width="1" opacity="0"/>`;
   const el = document.getElementById("chart2");
-  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Weekly weighted in-stock rate">${s}</svg>`;
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Weighted in-stock rate over time">${s}</svg>`;
   const svg = el.querySelector("svg"), cross = svg.querySelector("#ch2x");
   svg.addEventListener("mousemove", e => {
     const r = svg.getBoundingClientRect();
     const mx = (e.clientX - r.left) * W / r.width;
-    const i = Math.max(0, Math.min(n-1, Math.round((mx - m.l) / (iw/(n-1)))));
+    const i = Math.max(0, Math.min(n-1, Math.round((mx - m.l) / (iw/Math.max(n-1,1)))));
     cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i));
     cross.setAttribute("opacity", 1);
-    const w = D.weeks[i];
-    showTT(`<div class="t">Week of ${w.week}</div>
+    const w = data[i];
+    showTT(`<div class="t">${bucketName(w.t)}</div>
       <div class="row"><span>WISR</span><b>${pct(w.wisr)}</b></div>
       <div class="row"><span>OOS rate</span><b>${pct(w.oos_rate)}</b></div>
       <div class="row"><span>Lost revenue</span><b>${eur(w.lost)}</b></div>`, e.clientX, e.clientY);
   });
   svg.addEventListener("mouseleave", () => { cross.setAttribute("opacity", 0); hideTT(); });
 }
+
+// ---- grain toggle
+function setGrain(g) {
+  grain = g;
+  document.getElementById("segW").setAttribute("aria-pressed", g === "weekly");
+  document.getElementById("segM").setAttribute("aria-pressed", g === "monthly");
+  const word = g === "weekly" ? "week" : "month";
+  document.getElementById("h-lost").textContent = `Lost revenue per ${word}, by OOS category`;
+  document.getElementById("h-wisr").textContent = `Weighted in-stock rate (WISR), ${g}`;
+  chart1(); chart2();
+}
+document.getElementById("segW").addEventListener("click", () => setGrain("weekly"));
+document.getElementById("segM").addEventListener("click", () => setGrain("monthly"));
 
 // ---- tables
 function tables() {
@@ -333,13 +364,6 @@ function tables() {
     D.episodes.map(r => `<tr><td class="muted">${esc(r.sku)}</td><td>${esc(r.title)}</td>
       <td>${r.start}</td><td>${r.end}</td><td class="n">${r.days}</td>
       <td class="n"><b>${eur(r.lost)}</b></td><td><span class="pill">${esc(r.cat)}</span></td></tr>`).join("");
-  document.getElementById("tblBlocked").innerHTML =
-    `<tr><th>SKU</th><th>Product</th><th class="n">Unrealized €</th>
-     <th class="n">Blocked days</th><th class="n">&lambda;/day</th><th class="n">Stock now</th></tr>` +
-    D.blocked.map(r => `<tr><td class="muted">${esc(r.sku)}</td><td>${esc(r.title)}</td>
-      <td class="n"><b>${eur(r.unrealized)}</b></td><td class="n">${r.days}</td>
-      <td class="n">${r.lam ?? "–"}</td>
-      <td class="n">${r.stock === null ? "–" : r.stock.toLocaleString()}</td></tr>`).join("");
 }
 
 document.getElementById("foot").innerHTML =
@@ -348,10 +372,11 @@ document.getElementById("foot").innerHTML =
   stock &le; 0 (Physical), days-of-supply &lt; 2 (Critically low), or a
   zero-sales day enclosed by sales with &lambda; &ge; 3 (Demand gap); episodes
   bridge until stock or sales demonstrably recover. Lost = max(&lambda; &minus;
-  units, 0) &times; trailing avg selling price. Archived/draft products stop
-  counting after their last sale. Deliberate-throttle and ad-signal rules from
-  the Amazon model are not applied (no per-SKU ad data in scope). Full write-up:
-  docs/METHODOLOGY.md · engine: scripts/oos_analytics.py`;
+  units, 0) &times; trailing avg selling price. Zero-sale days with &gt;15 days
+  of stock cover are ordinary demand variation, never counted. Archived/draft
+  products stop counting after their last sale. Deliberate-throttle and
+  ad-signal rules from the Amazon model are not applied (no per-SKU ad data in
+  scope). Full write-up: docs/METHODOLOGY.md · engine: scripts/oos_analytics.py`;
 
 chart1(); chart2(); tables();
 const mq = matchMedia("(prefers-color-scheme: dark)");

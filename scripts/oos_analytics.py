@@ -45,7 +45,10 @@ CAT_PHYSICAL = "Physical"
 CAT_CRITICAL = "Critically low"
 CAT_DEMAND_GAP = "Demand gap"
 CAT_SUPPRESSED = "Suppressed sales (post-OOS)"
-CAT_BLOCKED = "Listing blocked"
+# Internal guard only: a zero-sales day with ample stock is ordinary demand
+# variation (bulk/lumpy sellers) — this store has no listing suppression, so
+# these days are folded back into "In stock" and never valued.
+CAT_BLOCKED = "_ample_stock_zero"
 CAT_PRELAUNCH = "Pre-launch"
 CAT_DISCONTINUED = "Discontinued"
 OOS_CATS = {CAT_PHYSICAL, CAT_CRITICAL, CAT_DEMAND_GAP, CAT_SUPPRESSED}
@@ -187,11 +190,15 @@ def compute() -> dict:
 
     meta = variants.set_index("sku")
 
+    # The ample-stock guard kept these days out of "Demand gap"; with no
+    # listing suppression on this store they carry no signal at all.
+    df.loc[df["category"] == CAT_BLOCKED, "category"] = CAT_IN_STOCK
+
     # Warm-up: don't score the first weeks of history — baselines (lambda,
     # reach, price) are still forming and misread as outages.
     warmup_end = df["day"].min() + pd.Timedelta(days=WARMUP_DAYS)
     df.loc[(df["day"] < warmup_end) &
-           df["category"].isin(OOS_CATS | {CAT_BLOCKED}), "category"] = CAT_IN_STOCK
+           df["category"].isin(OOS_CATS), "category"] = CAT_IN_STOCK
 
     # Discontinued tail: a product that is no longer ACTIVE (archived, draft,
     # unlisted) was deliberately delisted — its zero-stock tail after the last
@@ -199,7 +206,7 @@ def compute() -> dict:
     df["status"] = df["sku"].map(meta["status"]).fillna("ACTIVE")
     last_sale_day = df[df["units"] > 0].groupby("sku")["day"].max()
     tail = (df["status"] != "ACTIVE") & (df["day"] > df["sku"].map(last_sale_day))
-    df.loc[tail & df["category"].isin(OOS_CATS | {CAT_BLOCKED}), "category"] = CAT_DISCONTINUED
+    df.loc[tail & df["category"].isin(OOS_CATS), "category"] = CAT_DISCONTINUED
 
     df["current_price"] = df["sku"].map(meta["current_price"])
     df["trail_price"] = df["trail_price"].fillna(df["current_price"])
@@ -207,14 +214,11 @@ def compute() -> dict:
     is_oos = df["category"].isin(OOS_CATS)
     df["lost_units"] = np.where(is_oos, (df["lam"] - df["units"]).clip(lower=0), 0.0)
     df["lost_revenue"] = df["lost_units"] * df["trail_price"].fillna(0)
-    df["unrealized_revenue"] = np.where(
-        df["category"] == CAT_BLOCKED, df["lam"].fillna(0) * df["trail_price"].fillna(0), 0.0)
     df["expected_revenue"] = df["lam"].fillna(0) * df["trail_price"].fillna(0)
 
     RESULTS.mkdir(exist_ok=True)
     keep = ["sku", "day", "units", "revenue", "stock", "lam", "reach",
-            "trail_price", "live", "category", "lost_units", "lost_revenue",
-            "unrealized_revenue"]
+            "trail_price", "live", "category", "lost_units", "lost_revenue"]
     df[keep].to_csv(RESULTS / "sku_daily.csv", index=False, float_format="%.4f")
 
     episodes = build_episodes(df, meta)
@@ -242,32 +246,33 @@ def summarize(df: pd.DataFrame, episodes: pd.DataFrame, meta: pd.DataFrame) -> d
     is_oos = df["category"].isin(OOS_CATS)
     live_like = df["live"] | is_oos  # OOS days count as live exposure
 
-    # Weekly rollup (ISO weeks, keyed by Monday)
-    df["week"] = df["day"].dt.to_period("W-SUN").dt.start_time
-    wk = df.groupby("week").agg(
-        lost_revenue=("lost_revenue", "sum"),
-        lost_units=("lost_units", "sum"),
-        unrealized_revenue=("unrealized_revenue", "sum"),
-        actual_revenue=("revenue", "sum"),
-    )
-    wk_cat = (df[is_oos].groupby(["week", "category"])["lost_revenue"].sum()
-              .unstack(fill_value=0.0).reindex(wk.index, fill_value=0.0))
-    wk_oos = df[live_like].groupby("week").apply(
-        lambda g: pd.Series({
-            "oos_rate": g["category"].isin(OOS_CATS).mean(),
-            "wisr": 1 - (g.loc[g["category"].isin(OOS_CATS), "expected_revenue"].sum()
-                         / max(g["expected_revenue"].sum(), 1e-9)),
-            "skus_oos": g.loc[g["category"].isin(OOS_CATS), "sku"].nunique(),
-        }), include_groups=False)
-    weekly = wk.join(wk_cat).join(wk_oos).reset_index()
+    # Time rollups: ISO weeks (keyed by Monday) and calendar months
+    def rollup(bucket: pd.Series, name: str) -> pd.DataFrame:
+        d = df.assign(**{name: bucket})
+        agg = d.groupby(name).agg(
+            lost_revenue=("lost_revenue", "sum"),
+            lost_units=("lost_units", "sum"),
+            actual_revenue=("revenue", "sum"),
+        )
+        cat = (d[is_oos].groupby([name, "category"])["lost_revenue"].sum()
+               .unstack(fill_value=0.0).reindex(agg.index, fill_value=0.0))
+        oos = d[live_like].groupby(name).apply(
+            lambda g: pd.Series({
+                "oos_rate": g["category"].isin(OOS_CATS).mean(),
+                "wisr": 1 - (g.loc[g["category"].isin(OOS_CATS), "expected_revenue"].sum()
+                             / max(g["expected_revenue"].sum(), 1e-9)),
+                "skus_oos": g.loc[g["category"].isin(OOS_CATS), "sku"].nunique(),
+            }), include_groups=False)
+        return agg.join(cat).join(oos).reset_index()
+
+    weekly = rollup(df["day"].dt.to_period("W-SUN").dt.start_time, "week")
+    monthly = rollup(df["day"].dt.to_period("M").dt.start_time, "month")
 
     # Per-SKU rollup
     sku = df.groupby("sku").agg(
         lost_revenue=("lost_revenue", "sum"),
         lost_units=("lost_units", "sum"),
-        unrealized_revenue=("unrealized_revenue", "sum"),
         oos_days=("category", lambda s: s.isin(OOS_CATS).sum()),
-        blocked_days=("category", lambda s: (s == CAT_BLOCKED).sum()),
         actual_revenue=("revenue", "sum"),
     )
     last = df.sort_values("day").groupby("sku").tail(1).set_index("sku")
@@ -289,7 +294,6 @@ def summarize(df: pd.DataFrame, episodes: pd.DataFrame, meta: pd.DataFrame) -> d
         "totals": {
             "lost_revenue": round(float(df["lost_revenue"].sum()), 2),
             "lost_units": round(float(df["lost_units"].sum()), 1),
-            "unrealized_revenue": round(float(df["unrealized_revenue"].sum()), 2),
             "actual_revenue": round(float(df["revenue"].sum()), 2),
             "oos_rate": round(oos_days / max(live_days, 1), 4),
             "wisr": round(1 - exp_rev_oos / max(exp_rev, 1e-9), 4),
@@ -302,6 +306,7 @@ def summarize(df: pd.DataFrame, episodes: pd.DataFrame, meta: pd.DataFrame) -> d
         },
     }
     weekly.to_csv(RESULTS / "weekly.csv", index=False, float_format="%.2f")
+    monthly.to_csv(RESULTS / "monthly.csv", index=False, float_format="%.2f")
     sku.to_csv(RESULTS / "sku_summary.csv", index=False, float_format="%.2f")
     (RESULTS / "summary.json").write_text(json.dumps(summary, indent=2))
     return summary
