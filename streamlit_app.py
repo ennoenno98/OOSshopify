@@ -74,12 +74,16 @@ st.title("OOS lost revenue — vegavero.com")
 st.caption(f"Shopify store · data {MIN_D} → {MAX_D} · daily model · "
            "methodology: docs/METHODOLOGY.md")
 
-# ---- filters: period slicer + granularity ------------------------------
-fc1, fc2 = st.columns([3, 1])
-start, end = fc1.slider(
-    "Period", min_value=MIN_D, max_value=MAX_D, value=(MIN_D, MAX_D),
-    format="DD MMM YY")
+# ---- filters: period picker + granularity ------------------------------
+fc1, fc2, _ = st.columns([1, 1, 2])
+sel = fc1.date_input(
+    "Period", value=(MIN_D, MAX_D), min_value=MIN_D, max_value=MAX_D,
+    format="DD.MM.YYYY")
 grain = fc2.radio("Granularity", ["Weekly", "Monthly"], horizontal=True)
+if len(sel) != 2:  # calendar open, end date not picked yet
+    st.info("Pick an end date in the calendar.")
+    st.stop()
+start, end = sel
 
 d = daily[(daily["day"].dt.date >= start) & (daily["day"].dt.date <= end)]
 if d.empty:
