@@ -118,10 +118,16 @@ st.divider()
 # ---- time charts --------------------------------------------------------
 if grain == "Weekly":
     bucket = d["day"].dt.to_period("W-SUN").dt.start_time
-    tcol, axis_fmt = "week", "%d %b"
+    tcol = "week"
+    # one tick per week is too dense over a year; let vega thin them out,
+    # day-of-month in the label keeps every tick unique
+    x_axis = alt.Axis(format="%d %b", grid=False)
 else:
     bucket = d["day"].dt.to_period("M").dt.start_time
-    tcol, axis_fmt = "month", "%b %y"
+    tcol = "month"
+    # exactly one tick per month — auto ticks land mid-month and repeat labels
+    x_axis = alt.Axis(format="%b %y", grid=False,
+                      tickCount={"interval": "month", "step": 1})
 db = d.assign(**{tcol: bucket})
 
 st.subheader(f"Lost revenue per {tcol}, by OOS category")
@@ -131,10 +137,9 @@ long = (db[db["is_oos"]].groupby([tcol, "category"])["lost_revenue"].sum()
         .reset_index())
 stacked = (
     alt.Chart(long)
-    .mark_bar(binSpacing=2)
+    .mark_bar(binSpacing=2, size=24 if grain == "Monthly" else 10)
     .encode(
-        x=alt.X(f"{tcol}:T", title=None,
-                axis=alt.Axis(format=axis_fmt, grid=False)),
+        x=alt.X(f"{tcol}:T", title=None, axis=x_axis),
         y=alt.Y("lost_revenue:Q", title="Lost revenue (€)",
                 axis=alt.Axis(format="~s")),
         color=alt.Color("category:N", title=None,
@@ -165,8 +170,7 @@ wisr = (
     .mark_area(line={"color": ACCENT, "strokeWidth": 2},
                color=ACCENT, opacity=0.12)
     .encode(
-        x=alt.X(f"{tcol}:T", title=None,
-                axis=alt.Axis(format=axis_fmt, grid=False)),
+        x=alt.X(f"{tcol}:T", title=None, axis=x_axis),
         y=alt.Y("wisr:Q", title="WISR", scale=alt.Scale(domain=[0, 1]),
                 axis=alt.Axis(format="%")),
         tooltip=[alt.Tooltip(f"{tcol}:T", title=grain[:-2]),
