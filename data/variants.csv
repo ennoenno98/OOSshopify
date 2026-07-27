@@ -1,28 +1,28 @@
 sku,product_title,variant_title,current_price,status
 ,L-Lysin Capsules,240 Capsules,0.00,DRAFT
-2R-49NC-R697,MSM Powder,1 kg / Pouch,17.90,ACTIVE
+2R-49NC-R697,MSM Powder,1 kg / Pouch,14.90,ACTIVE
 Active_Lifestyle_Set_3,All Day Athlete Set,Default Title,64.53,ACTIVE
-Agility_Set_3,Loosen Up Set,Default Title,57.33,DRAFT
+Agility_Set_3,Loosen Up Set,Default Title,57.33,ACTIVE
 BJ-E223-8EKW,Moringa Oleifera Capsules Organic,270 Capsules,24.90,ACTIVE
 Beauty_Set_3-0,Beauty Elixir Set,Default Title,73.53,ACTIVE
 CP-DQMG-RVN9,Wild Yams + Zinc Capsules,120 Capsules,21.90,ACTIVE
 CW-KVIN-V39Y,D-Mannose Powder,250G,20.90,ACTIVE
 Daily_Vegan_Set,Daily Vegan Set,Default Title,55.70,DRAFT
 Detox_Set_3,Deep Clean Set,Default Title,48.33,ACTIVE
-Digestion_Health_Set_3,Happy Gutfeeling Set,Default Title,64.53,DRAFT
-Dreamcatcher_Set_3,Dream Catcher Set,Default Title,51.03,DRAFT
-Emotional_Balance_Set_3,Peace of Mind Set,Default Title,56.43,DRAFT
-Energy_Set_3,Full Battery Set,Default Title,50.13,DRAFT
+Digestion_Health_Set_3,Happy Gutfeeling Set,Default Title,64.53,ACTIVE
+Dreamcatcher_Set_3,Dream Catcher Set,Default Title,55.53,ACTIVE
+Emotional_Balance_Set_3,Peace of Mind Set,Default Title,56.43,ACTIVE
+Energy_Set_3,Full Battery Set,Default Title,50.13,ACTIVE
 Everyday_Essentials_Set,Everyday Essentials Set,Default Title,55.70,DRAFT
-General_Health_Set_3,All-Rounder Set,Default Title,55.53,DRAFT
+General_Health_Set_3,All-Rounder Set,Default Title,55.53,ACTIVE
 Gut_Flora_Set,Gut Flora Set,Default Title,64.53,DRAFT
 Hormonal_Blanace_Set_3,Inner Center Set,Default Title,50.13,ACTIVE
 Immune_System_Set_3,Shield Set,Default Title,60.03,ACTIVE
-Menopause_Set,Menopause Set,Default Title,53.73,DRAFT
+Menopause_Set,Menopause Set,Default Title,53.73,ACTIVE
 Mental_Focus_Set_3,Clever Mind Set,Default Title,56.43,ACTIVE
 NX-CVPF-VCEZ,Reishi Extract Capsules,120 Capsules,20.90,ACTIVE
-Performance_Push_Set_3,Ready? Go! Set,Default Title,44.73,DRAFT
-Regeneration_Set_3,Reboot Set,Default Title,51.93,DRAFT
+Performance_Push_Set_3,Ready? Go! Set,Default Title,44.73,ACTIVE
+Regeneration_Set_3,Reboot Set,Default Title,51.93,ACTIVE
 Sunkissed-set,Sunkissed Set,Default Title,62.73,ACTIVE
 TU-QNYD-JRRX,Tribulus Terrestris Extract Capsules,120 Capsules,18.90,ACTIVE
 VI-ZU99-SZ0B,L-Tryptophan Capsules,120 Capsules,17.90,ACTIVE
@@ -103,8 +103,8 @@ VV-VITA-259,Mushroom Mix Complex Capsules,120 Capsules,25.90,ACTIVE
 VV-VITA-262,Bilberry & Pine Bark Extracts Capsules Organic,90 Capsules,19.90,ACTIVE
 VV-VITA-264,Mugwort Extract Capsules,180 Capsules,25.90,ACTIVE
 VV-VITA-265,Ginkgo + Ginseng Extract Capsules,120 Capsules,23.90,ACTIVE
-VV-VITA-266,Moringa Oleifera Tablets Organic,180 Tablets,20.90,ACTIVE
-VV-VITA-274,Cysti-Aid Capsules,120 Capsules,21.90,ACTIVE
+VV-VITA-266,Moringa Oleifera Tablets Organic,180 Tablets,19.90,ACTIVE
+VV-VITA-274,Cysti-Aid Capsules,120 Capsules,22.90,ACTIVE
 VV-VITA-276,Venaflux Complex Capsules,120 Capsules,24.90,ACTIVE
 VV-VITA-277,Vitamin B12 Junior Spray,25 ml,12.90,ACTIVE
 VV-VITA-284,Chaga Extract Capsules Organic,90 Capsules,23.90,ACTIVE
@@ -173,7 +173,7 @@ VV-VITA-369,Glucomannan Capsules Organic,90 Capsules,17.90,ACTIVE
 VV-VITA-370,Magnesium Bisglycinate Capsules,180 Capsules,17.90,ACTIVE
 VV-VITA-371,Nattokinase Capsules,180 Capsules,15.90,ACTIVE
 VV-VITA-372,Vitamin D3 + K2 Depot Tablets,90 Tablets,18.90,ACTIVE
-VV-VITA-373,Keto Power Complex Capsules,60 Capsules,12.70,ARCHIVED
+VV-VITA-373,Keto Power Complex Capsules,60 Capsules,14.90,ARCHIVED
 VV-VITA-374,Psyllium Husks Organic,400 g,19.90,ACTIVE
 VV-VITA-375,Strong Bones Complex Tablets,180 Tablets,16.90,ACTIVE
 VV-VITA-376,Griffonia Extract (5-HTP) Capsules,90 Capsules,15.90,ACTIVE
@@ -193,14 +193,14 @@ VV-VITA-388,Glycine Powder,300 g,10.90,ACTIVE
 VV-VITA-389,Prosta-X Complex Capsules,180 Capsules,23.90,ACTIVE
 VV-VITA-39,D-Mannose Complex Capsules,120 Capsules,22.90,ACTIVE
 VV-VITA-390,L-Citrulline Malate Powder,500 g,19.90,ACTIVE
-VV-VITA-391,Quercetin Complex Capsules,120 Capsules,20.90,ACTIVE
+VV-VITA-391,Quercetin Complex Capsules,120 Capsules,19.90,ACTIVE
 VV-VITA-392,GABA Capsules,90 Capsules,15.90,ACTIVE
 VV-VITA-393,BCAA Powder Mango,450 g,20.90,ACTIVE
 VV-VITA-394,EAA Powder Peach,400 g,20.90,ACTIVE
 VV-VITA-395,Zinc Bisglycinate Capsules,300 Capsules,19.90,ACTIVE
 VV-VITA-398,Multivitamin Junior Gummies,60 Gummies,13.90,ACTIVE
 VV-VITA-399,Glucomannan Complex Capsules,180 Capsules,24.90,ACTIVE
-VV-VITA-400,Keto Power Complex Capsules,90 Capsules,14.93,ACTIVE
+VV-VITA-400,Keto Power Complex Capsules,90 Capsules,19.90,ACTIVE
 VV-VITA-401,Vitex Agnus-Castus Capsules,240 Capsules,19.00,ACTIVE
 VV-VITA-402,Un-Bloat Capsules,120 Capsules,24.90,ACTIVE
 VV-VITA-403,Magnesium Citrate Powder,500 g,19.90,ACTIVE
@@ -216,8 +216,10 @@ VV-VITA-412,Lactase Tablets,180 Tablets,19.90,ACTIVE
 VV-VITA-413,Q10 Capsules,120 Capsules,27.90,ACTIVE
 VV-VITA-414,Hericium Capsules,180 Capsules,26.90,ACTIVE
 VV-VITA-415,PMS Capsules,120 Capsules,24.90,ACTIVE
+VV-VITA-416,Calcium Capsules,180 Capsules,0.00,DRAFT
 VV-VITA-417,Omega 3 Gummies,60 Gummies,24.90,ACTIVE
 VV-VITA-418,Folate Tablets,240 Tablets,0.00,DRAFT
+VV-VITA-419,L-Lysin Capsules,240 Capsules,0.00,DRAFT
 VV-VITA-420,Shilajit Complex Capsules,90 Capsules,0.00,DRAFT
 VV-VITA-421,Shilajit Resin,30 g,0.00,DRAFT
 VV-VITA-422,Protein Chocolate Powder,600 g,0.00,DRAFT
@@ -225,6 +227,7 @@ VV-VITA-423,Protein Vanilla Powder,600 g,0.00,DRAFT
 VV-VITA-424,Vitamin B6 Tablets,365 Tablets,0.00,DRAFT
 VV-VITA-425,Pre-Workout Powder,350 g,0.00,DRAFT
 VV-VITA-426,Hydration Powder,390 g,0.00,DRAFT
+VV-VITA-427,Creatine Gummies,90 Gummies,0.00,DRAFT
 VV-VITA-46,Multivitamin Plus Capsules,120 Capsules,19.90,ACTIVE
 VV-VITA-49,Iron Bisglycinate Capsules,120 Capsules,18.90,ACTIVE
 VV-VITA-50,Colla-Veg Complex Capsules,120 Capsules,19.90,ACTIVE

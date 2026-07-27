@@ -1,152 +1,156 @@
 sku,lost_revenue,lost_units,oos_days,actual_revenue,lam,stock_now,reach_now,category_now,product_title,variant_title
-VV-VITA-231,18586.73,781.39,137,39841.31,12.00,5352.00,492.95,In stock,Myo-Inositol Complex Capsules,120 Capsules
-VV-VITA-243,13609.68,805.40,129,19976.78,8.24,8341.00,915.87,In stock,Multi Magnesium Complex Capsules,180 Capsules
-VV-VITA-381,13120.99,949.58,147,17185.57,9.42,-10.00,-1.79,Physical,Myo-Inositol Powder,200 g
-VV-VITA-46,12964.88,753.94,189,5393.82,3.95,3103.00,725.38,In stock,Multivitamin Plus Capsules,120 Capsules
-VV-VITA-228,11957.83,593.23,129,15296.94,4.23,2957.00,890.28,In stock,Vitamin D3 + K2 Oil Capsules,120 Capsules
-VV-VITA-106,9622.17,513.11,185,7725.66,2.07,-10.00,-3.89,Physical,Black Garlic Extract Capsules,120 Capsules
-VV-VITA-230,8393.05,389.52,172,5270.34,2.71,0.00,0.00,Physical,Berberine Plus Capsules,90 Capsules
-VV-VITA-352,6369.35,330.32,133,4920.97,1.53,837.00,651.00,In stock,Omega 3 + ADEK Oil Capsules,60 Capsules
-TU-QNYD-JRRX,6071.08,493.82,58,20386.34,2.51,672.00,186.67,In stock,Tribulus Terrestris Extract Capsules,120 Capsules
-VV-VITA-355,5661.69,286.76,107,9445.94,3.74,6334.00,1380.49,In stock,L-Glutathione Complex Capsules,90 Capsules
-VV-VITA-224,5426.56,310.09,114,13454.89,5.14,-5.00,-1.40,Physical,Vegan Essentials Complex Capsules,120 Capsules
-VV-VITA-127,4729.33,233.06,146,9001.58,3.75,3392.00,931.14,In stock,Saffron Extract Capsules,120 Capsules
-VV-VITA-172,4645.85,315.55,85,5537.68,1.58,152.00,109.44,In stock,Maitake Capsules Organic,60 Capsules
-VV-VITA-287,4432.61,258.52,144,5139.69,2.14,1008.00,613.57,In stock,Natural Silicium Capsules Organic,120 Capsules
-VV-VITA-155,3826.56,225.04,78,9275.38,3.18,709.00,211.19,In stock,Reishi Extract Capsules Organic,90 Capsules
-VV-VITA-311,3813.60,222.69,107,8256.11,3.03,-9.00,-3.00,Physical,NAC Capsules,180 Capsules
-VV-VITA-223,3734.87,181.48,43,53122.74,13.16,337.00,28.86,In stock,Omega 3 Oil Capsules,90 Capsules
-VV-VITA-86,3655.14,203.57,156,3257.47,1.35,-10.00,-4.67,Physical,MSM Capsules,365 Capsules
-VV-VITA-329,3531.37,196.65,106,9350.87,2.86,5026.00,2606.07,In stock,Liposomal Vitamin C Capsules,120 Capsules
-VV-VITA-372,3380.61,202.78,137,2747.47,0.84,3096.00,4562.53,In stock,Vitamin D3 + K2 Depot Tablets,90 Tablets
-VV-VITA-197,3333.51,189.47,25,48948.52,6.95,36.00,5.49,In stock,Guggul Extract Capsules,120 Capsules
-VV-VITA-203,3203.93,189.24,74,8983.66,2.57,217.00,67.17,In stock,GABA Plus Capsules,120 Capsules
-VV-VITA-256,3101.49,150.35,112,7761.34,2.11,3868.00,1310.13,In stock,Pumpkin Seed Oil Capsules Organic,180 Capsules
-VV-VITA-102,3067.77,178.41,166,1313.63,0.81,846.00,1903.50,In stock,Ginkgo Biloba Extract Capsules,180 Capsules
-VV-VITA-390,2975.40,153.50,161,577.81,0.65,379.00,842.22,In stock,L-Citrulline Malate Powder,500 g
-VV-VITA-222,2932.90,137.46,85,11173.35,2.81,664.00,195.71,In stock,Black Cumin Seed Oil Capsules Organic,180 Capsules
-VV-VITA-356,2841.40,184.55,88,4692.36,1.93,-11.00,-9.62,Physical,Black Maca Plus Capsules,120 Capsules
-VV-VITA-88,2734.60,125.37,118,4021.47,1.27,136.00,119.00,In stock,Chlorella & Spirulina Capsules Organic,240 Capsules
-VV-VITA-364,2700.75,134.93,40,29924.91,8.00,342.00,40.07,In stock,Astaxanthin Oil Capsules Organic,60 Capsules
-VV-VITA-183,2554.80,111.21,93,5436.26,1.08,70.00,81.67,In stock,Reflu-X Complex Capsules,120 Capsules
-VV-VITA-216,2521.39,139.27,59,3371.64,1.22,98.00,114.33,In stock,Kudzu Plus Capsules,180 Capsules
-VV-VITA-310,2502.43,127.03,69,6923.85,2.34,80.00,35.56,In stock,Bergamot Extract Capsules,120 Capsules
-VV-VITA-50,2352.17,136.98,73,6561.77,2.43,329.00,107.28,In stock,Colla-Veg Complex Capsules,120 Capsules
-VV-VITA-308,2309.66,108.58,66,5734.12,1.32,580.00,504.35,In stock,Digestive Enzymes Complex Capsules,180 Capsules
-VV-VITA-159,2279.69,114.59,55,14052.59,3.52,-3.00,-1.08,Physical,EAA Tablets,300 Tablets
-VV-VITA-173,2278.14,143.88,67,6605.40,2.26,2061.00,1881.78,In stock,Lion's Mane Capsules Organic,60 Capsules
-VV-VITA-249,2195.33,113.49,62,6311.07,2.48,1306.00,546.70,In stock,Saccharomyces Boulardii Capsules,90 Capsules
-VV-VITA-142,2172.48,104.31,66,8979.56,1.46,0.00,0.00,Physical,Prostaid Complex Capsules,180 Capsules
-VV-VITA-341,2126.52,148.65,59,6696.76,2.56,0.00,0.00,Physical,Vitamin B12 Drops,50 ml
-VV-VITA-122,2047.82,102.88,118,3436.96,1.09,1172.00,1654.59,In stock,Immu Pro Complex Capsules,120 Capsules
-VV-VITA-186,2015.20,97.71,96,1881.60,1.36,-20.00,-46.67,Physical,Chlorella Capsules Organic,180 Tablets
-VV-VITA-49,1973.92,117.60,65,8740.82,2.99,0.00,0.00,Physical,Iron Bisglycinate Capsules,120 Capsules
-VV-VITA-286,1969.59,104.73,83,2906.01,1.44,54.00,45.82,In stock,Saw palmetto + Pygeum africanum Extracts Capsules,90 Capsules
-VV-VITA-107,1831.68,130.24,42,3962.43,3.57,312.00,66.86,In stock,Ceylon Cinnamon Extract Capsules,120 Capsules
-VV-VITA-276,1827.46,90.62,32,14736.72,4.87,-3.00,-0.53,Physical,Venaflux Complex Capsules,120 Capsules
-VV-VITA-38,1822.31,132.34,75,4994.53,2.16,654.00,381.50,In stock,Vitamin B Plus Tablets,180 Tablets
-VV-VITA-367,1802.18,117.93,58,6898.76,3.33,1049.00,349.67,In stock,Creatine Monohydrate Powder,500 g
-VV-VITA-297,1758.98,106.87,58,3217.31,1.85,0.00,0.00,Physical,Beta Carotene Plus Oil Capsules,120 Capsules
-VV-VITA-124,1652.90,84.67,36,9884.10,2.19,276.00,179.72,In stock,Natural Vitamin C Organic Capsules,180 Capsules
-VV-VITA-366,1642.41,126.06,104,2199.04,1.36,681.00,413.46,In stock,Iron Gummies,90 Gummies
-VV-VITA-301,1632.23,100.36,53,5853.46,1.53,494.00,628.73,In stock,ZMA Capsules: Zinc + Magnesium + Vitamin B6,120 Capsules
-VV-VITA-262,1541.69,104.24,124,1572.94,2.25,88.00,60.21,In stock,Bilberry & Pine Bark Extracts Capsules Organic,90 Capsules
-VV-VITA-339,1476.04,84.17,53,4825.90,1.50,-10.00,-7.14,Physical,L-Tyrosine Plus Capsules,180 Capsules
-VV-VITA-357,1475.45,84.78,75,887.59,1.21,-10.00,-7.78,Physical,Taurine Plus Capsules,90 Capsules
-VV-VITA-336,1443.33,84.03,65,2387.15,1.20,1167.00,1098.35,In stock,Devil's Claw Extract Capsules Organic,90 Capsules
-VV-VITA-304,1286.43,98.85,57,4357.75,1.76,4133.00,2893.10,In stock,Folate Capsules,120 Capsules
-VV-VITA-146,1199.20,78.67,59,4355.11,1.22,1859.00,1774.50,In stock,Spirulina Tablets Organic,300 Tablets
-CP-DQMG-RVN9,1193.85,63.26,56,1745.27,0.84,564.00,564.00,In stock,Wild Yams + Zinc Capsules,120 Capsules
-VV-VITA-250,1124.19,64.29,74,2410.82,1.24,2704.00,3536.00,In stock,Brahmi Tablets Organic,180 Tablets
-VV-VITA-345,1090.43,53.13,63,3821.51,1.18,237.00,321.64,In stock,Serenity Complex Capsules,90 Capsules
-VV-VITA-257,1086.33,46.04,62,7764.98,2.06,626.00,438.20,In stock,Lecithin Oil Capsules Organic,120 Capsules
-VV-VITA-313,1040.27,60.41,63,5302.56,1.70,3.00,2.15,In stock,Boswellia Extract Capsules,120 Capsules
-VV-VITA-317,1035.49,57.79,56,4199.98,1.60,3557.00,4393.94,In stock,Citrulline Plus Capsules,150 Capsules
-VV-VITA-320,1006.12,52.80,9,33376.31,6.32,6854.00,994.36,In stock,Vollagen + Hyaluronic Acid Complex Capsules,120 Capsules
-VV-VITA-158,1003.31,42.32,19,13910.85,2.86,803.00,312.28,In stock,Glucosamine Complex Capsules,180 Capsules
-VV-VITA-391,996.24,50.22,48,5783.89,1.92,33.00,34.22,In stock,Quercetin Complex Capsules,120 Capsules
-VV-VITA-206,994.08,64.53,60,2266.64,1.37,1698.00,936.83,In stock,Artichoke Extract Capsules Organic,120 Capsules
-VV-VITA-208,872.94,55.16,20,8324.96,2.73,-6.00,-1.17,Physical,Horse Chestnut Capsules Organic,120 Capsules
-VV-VITA-382,862.90,51.57,93,1959.44,0.99,368.00,630.86,In stock,Taurine Powder,1 kg
-VV-VITA-237,830.34,51.16,27,9145.25,3.19,128.00,47.79,In stock,Choline Trio Capsules,90 Capsules
-VV-VITA-298,815.27,44.37,35,5837.02,1.65,2046.00,1736.00,In stock,Black Maca + Tribulus Capsules,120 Capsules
-VV-VITA-252,775.29,40.16,42,3599.81,1.03,107.00,90.54,In stock,Shiitake Extract Capsules,120 Capsules
-VV-VITA-351,702.72,40.29,41,2050.69,1.16,-10.00,-11.67,Physical,Cordyceps Sinensis Extract Capsules Organic,60 Capsules
-VV-VITA-174,664.52,39.18,43,1472.89,0.50,92.00,286.22,In stock,Olive Leaf Extract Capsules,90 Capsules
-VV-VITA-111,652.13,38.03,41,2604.40,0.49,816.00,2284.80,In stock,Colon Care Complex Capsules,120 Capsules
-VV-VITA-386,644.24,32.81,59,2487.35,0.68,1070.00,1070.00,In stock,Femme Biotics Capsules,60 Capsules
-VV-VITA-407,625.66,40.47,24,3006.71,2.74,137.00,166.36,In stock,Green Supreme Complex Powder,270 g
-VV-VITA-204,620.82,40.48,49,1610.05,0.62,49.00,91.00,In stock,Devil's Claw Plus Capsules,120 Capsules
-VV-VITA-119,596.24,35.39,46,5595.90,2.04,250.00,145.83,In stock,Magnesium + Potassium Capsules,180 Capsules
-VV-VITA-248,577.60,26.36,38,9132.12,1.50,8971.00,6788.86,In stock,Oregano Oil Capsules Organic,90 Capsules
-VV-VITA-93,567.51,40.66,24,4577.63,1.62,104.00,65.00,In stock,Vitamin B12 Spray,25 ml
-VV-VITA-94,546.73,24.53,10,14272.96,2.24,403.00,226.69,In stock,Pro Bio Capsules Organic,60 Capsules
-VV-VITA-151,546.46,25.84,23,9747.52,1.78,5728.00,2673.07,In stock,Female Balance Complex Capsules,180 Capsules
-VV-VITA-57-V,538.39,15.92,18,6490.63,0.83,543.00,638.82,In stock,Hyaluronic Acid Capsules,180 Capsules
-VV-VITA-215,518.10,31.46,25,4857.21,1.65,57.00,31.92,In stock,Horsetail Extract Capsules Organic,90 Capsules
-VV-VITA-199,502.85,27.59,35,3193.97,0.81,470.00,506.15,In stock,St. John's Wort + Passion Flower Capsules Organic,90 Capsules
-VV-VITA-417,491.26,23.44,8,4932.30,3.05,591.00,151.82,In stock,Omega 3 Gummies,60 Gummies
-VV-VITA-264,471.84,20.28,19,5267.75,0.97,162.00,254.57,In stock,Mugwort Extract Capsules,180 Capsules
-VV-VITA-121,427.42,22.97,15,5470.66,1.04,858.00,720.72,In stock,Female Harmony Complex Capsules,120 Capsules
-VV-VITA-295,407.33,19.52,39,2300.86,1.03,34.00,49.11,In stock,Sugar Balance Complex Capsules,120 Capsules
-VV-VITA-202,399.87,25.66,41,1843.40,0.71,578.00,1083.75,In stock,Multivitamin Junior Spray,25 ml
-VV-VITA-395,387.39,21.72,25,4910.24,1.07,1607.00,2812.25,In stock,Zinc Bisglycinate Capsules,300 Capsules
-CW-KVIN-V39Y,324.12,17.10,17,5273.27,1.30,-2.00,-1.04,Physical,D-Mannose Powder,250G
-VV-VITA-371,290.08,22.74,21,2955.78,0.94,464.00,464.00,In stock,Nattokinase Capsules,180 Capsules
-VV-VITA-57-V2,282.55,13.77,15,3387.22,0.61,143.00,235.53,In stock,Hyaluronic Acid Capsules,90 Capsules
-VV-VITA-318,264.20,16.44,22,2446.56,1.15,300.00,233.33,In stock,Garlic Plus Capsules,90 Capsules
-VV-VITA-39,243.98,13.50,13,7027.02,1.66,1725.00,700.00,In stock,D-Mannose Complex Capsules,120 Capsules
-VV-VITA-198,241.98,15.54,9,5482.47,1.65,63.00,49.00,In stock,Bromelain Capsules,120 Capsules
-VV-VITA-354,237.48,12.43,12,7418.92,1.66,1069.00,1301.39,In stock,Mushroom Complex Capsules Organic,90 Capsules
-VV-VITA-403,234.77,14.27,8,8640.90,2.22,0.00,0.00,Physical,Magnesium Citrate Powder,500 g
-VV-VITA-190,216.50,13.44,22,1713.22,1.15,93.00,46.50,In stock,Papaya Extract Capsules Organic,120 Capsules
-VV-VITA-346,215.90,19.00,20,593.20,0.64,96.00,128.00,In stock,Chromium Plus Capsules,90 Capsules
-VV-VITA-338,212.48,11.93,14,6230.27,1.31,306.00,225.47,In stock,Turmeric Capsules Organic,120 Capsules
-VV-VITA-385,204.13,13.12,18,1487.87,0.56,1361.00,3742.75,In stock,Evening Primrose Oil Capsules,120 Capsules
-VV-VITA-349,183.67,11.40,25,841.86,1.00,333.00,259.00,In stock,Fenugreek Capsules Organic,120 Capsules
-VV-VITA-157,170.49,14.30,9,3867.70,1.62,798.00,432.25,In stock,Hawthorn Extract Capsules Organic,60 Capsules
-VV-VITA-258,167.19,10.02,11,3269.71,0.78,77.00,86.24,In stock,Flaxseed Oil Capsules Organic,120 Capsules
-VV-VITA-171,150.28,5.93,7,9636.42,1.69,286.00,216.43,In stock,Vision Care Complex Capsules,120 Capsules
-VV-VITA-02,124.43,7.87,9,1677.60,0.92,51.00,51.00,In stock,Milk Thistle Extract Capsules,120 Capsules
-VV-VITA-379,112.01,7.33,8,5802.86,2.02,1234.00,822.67,In stock,Glucosamine Plus Capsules,120 Capsules
-VV-VITA-378,111.25,8.75,14,997.56,0.38,242.00,564.67,In stock,Brewer's Yeast Capsules,120 Capsules
-VV-VITA-168,99.67,5.26,3,3867.75,1.60,14.00,8.91,In stock,Sun Care Complex Capsules,180 Capsules
-BJ-E223-8EKW,76.78,3.01,3,11332.90,1.68,18757.00,9549.02,In stock,Moringa Oleifera Capsules Organic,270 Capsules
-VV-VITA-413,47.47,1.87,3,766.06,0.75,424.00,791.47,In stock,Q10 Capsules,120 Capsules
-VV-VITA-129,43.08,2.40,4,1235.96,0.64,88.00,164.27,In stock,Ginger Organic Capsules,120 Capsules
-VV-VITA-307,25.56,1.80,3,1150.87,0.64,319.00,223.30,In stock,Vitamin B3 Capsules,180 Capsules
+VV-VITA-231,18586.73,781.39,137,41313.77,11.16,5278.00,781.93,In stock,Myo-Inositol Complex Capsules,120 Capsules
+VV-VITA-243,13609.68,805.40,129,21112.58,7.65,9939.00,1164.40,In stock,Multi Magnesium Complex Capsules,180 Capsules
+VV-VITA-381,13250.14,958.74,148,18422.46,5.92,2081.00,256.91,In stock,Myo-Inositol Powder,200 g
+VV-VITA-46,12964.88,753.94,189,5672.56,2.94,3079.00,1197.39,In stock,Multivitamin Plus Capsules,120 Capsules
+VV-VITA-228,11957.83,593.23,129,16257.83,4.20,3748.00,1295.60,In stock,Vitamin D3 + K2 Oil Capsules,120 Capsules
+VV-VITA-106,9660.72,515.18,186,7884.84,2.07,554.00,692.50,In stock,Black Garlic Extract Capsules,120 Capsules
+VV-VITA-230,8456.32,392.23,173,5873.28,2.71,4027.00,1582.04,In stock,Berberine Plus Capsules,90 Capsules
+VV-VITA-352,6369.35,330.32,133,5275.64,1.48,2244.00,1904.00,In stock,Omega 3 + ADEK Oil Capsules,60 Capsules
+TU-QNYD-JRRX,6105.60,496.38,59,20440.51,2.30,129.00,41.05,In stock,Tribulus Terrestris Extract Capsules,120 Capsules
+VV-VITA-355,5661.69,286.76,107,10261.38,4.00,6287.00,1760.36,In stock,L-Glutathione Complex Capsules,90 Capsules
+VV-VITA-224,5511.45,315.20,115,14619.96,5.47,1547.00,261.80,In stock,Vegan Essentials Complex Capsules,120 Capsules
+VV-VITA-197,4821.84,276.94,38,48992.33,6.85,34.00,6.00,Demand gap,Guggul Extract Capsules,120 Capsules
+VV-VITA-127,4729.33,233.06,146,9973.19,3.83,2038.00,582.29,In stock,Saffron Extract Capsules,120 Capsules
+VV-VITA-172,4645.85,315.55,85,5592.38,1.95,98.00,49.00,In stock,Maitake Capsules Organic,60 Capsules
+VV-VITA-287,4432.61,258.52,144,5327.88,1.93,752.00,638.06,In stock,Natural Silicium Capsules Organic,120 Capsules
+VV-VITA-311,4031.28,235.35,111,8447.91,2.80,4008.00,2672.00,In stock,NAC Capsules,180 Capsules
+VV-VITA-155,3826.56,225.04,78,9722.62,2.95,336.00,130.67,In stock,Reishi Extract Capsules Organic,90 Capsules
+VV-VITA-223,3734.87,181.48,43,55380.47,12.34,4008.00,429.98,In stock,Omega 3 Oil Capsules,90 Capsules
+VV-VITA-86,3678.48,204.99,157,3718.87,2.18,593.00,242.59,In stock,MSM Capsules,365 Capsules
+VV-VITA-329,3531.37,196.65,106,9794.95,2.74,4225.00,2571.74,In stock,Liposomal Vitamin C Capsules,120 Capsules
+VV-VITA-372,3380.61,202.78,137,2883.43,0.80,5698.00,7597.33,In stock,Vitamin D3 + K2 Depot Tablets,90 Tablets
+VV-VITA-356,3208.92,207.69,100,4692.36,1.93,-10.00,-8.75,Physical,Black Maca Plus Capsules,120 Capsules
+VV-VITA-203,3203.93,189.24,74,9460.28,2.61,182.00,88.54,In stock,GABA Plus Capsules,120 Capsules
+VV-VITA-256,3101.49,150.35,112,7939.45,1.88,4390.00,1959.82,In stock,Pumpkin Seed Oil Capsules Organic,180 Capsules
+VV-VITA-102,3067.77,178.41,166,1350.66,0.77,555.00,1295.00,In stock,Ginkgo Biloba Extract Capsules,180 Capsules
+VV-VITA-276,3028.43,151.68,44,14722.37,5.35,-5.00,-0.74,Physical,Venaflux Complex Capsules,120 Capsules
+VV-VITA-390,2975.40,153.50,161,663.47,0.71,374.00,540.22,In stock,L-Citrulline Malate Powder,500 g
+VV-VITA-222,2932.90,137.46,85,11266.82,2.61,656.00,367.36,In stock,Black Cumin Seed Oil Capsules Organic,180 Capsules
+VV-VITA-88,2734.60,125.37,118,4299.53,1.23,653.00,731.36,In stock,Chlorella & Spirulina Capsules Organic,240 Capsules
+VV-VITA-364,2700.75,134.93,40,31884.87,9.27,7322.00,638.68,In stock,Astaxanthin Oil Capsules Organic,60 Capsules
+VV-VITA-183,2554.80,111.21,93,5562.78,1.07,114.00,184.15,In stock,Reflu-X Complex Capsules,120 Capsules
+VV-VITA-159,2546.58,129.06,59,14452.73,3.59,2662.00,1433.38,In stock,EAA Tablets,300 Tablets
+VV-VITA-49,2534.63,151.06,77,8740.82,2.80,-6.00,-3.00,Physical,Iron Bisglycinate Capsules,120 Capsules
+VV-VITA-142,2524.43,121.91,78,8979.56,1.54,0.00,0.00,Physical,Prostaid Complex Capsules,180 Capsules
+VV-VITA-216,2521.39,139.27,59,3467.18,1.09,28.00,60.31,In stock,Kudzu Plus Capsules,180 Capsules
+VV-VITA-310,2502.43,127.03,69,7354.87,2.20,52.00,23.72,In stock,Bergamot Extract Capsules,120 Capsules
+VV-VITA-50,2352.17,136.98,73,6987.40,2.52,303.00,151.50,In stock,Colla-Veg Complex Capsules,120 Capsules
+VV-VITA-308,2309.66,108.58,66,5849.82,1.07,569.00,1138.00,In stock,Digestive Enzymes Complex Capsules,180 Capsules
+VV-VITA-173,2278.14,143.88,67,6828.08,1.93,1462.00,1273.35,In stock,Lion's Mane Capsules Organic,60 Capsules
+VV-VITA-249,2195.33,113.49,62,6447.23,2.16,1291.00,1056.27,In stock,Saccharomyces Boulardii Capsules,90 Capsules
+VV-VITA-341,2163.20,151.25,60,7142.37,2.94,2142.00,812.48,In stock,Vitamin B12 Drops,50 ml
+VV-VITA-122,2047.82,102.88,118,3513.26,1.05,1252.00,2390.18,In stock,Immu Pro Complex Capsules,120 Capsules
+VV-VITA-186,2046.29,99.07,97,1981.02,1.36,504.00,1176.00,In stock,Chlorella Capsules Organic,180 Tablets
+VV-VITA-286,1969.59,104.73,83,3172.27,1.35,38.00,38.00,In stock,Saw palmetto + Pygeum africanum Extracts Capsules,90 Capsules
+VV-VITA-107,1831.68,130.24,42,4000.23,3.31,163.00,44.15,In stock,Ceylon Cinnamon Extract Capsules,120 Capsules
+VV-VITA-38,1822.31,132.34,75,5178.86,1.93,406.00,264.37,In stock,Vitamin B Plus Tablets,180 Tablets
+VV-VITA-367,1802.18,117.93,58,7348.29,3.12,1014.00,405.60,In stock,Creatine Monohydrate Powder,500 g
+VV-VITA-339,1789.66,101.34,65,4825.90,1.36,-10.00,-10.00,Physical,L-Tyrosine Plus Capsules,180 Capsules
+VV-VITA-297,1789.56,108.75,59,3284.99,1.91,1098.00,591.23,In stock,Beta Carotene Plus Oil Capsules,120 Capsules
+VV-VITA-357,1750.85,99.35,87,887.59,1.21,-10.00,-7.78,Physical,Taurine Plus Capsules,90 Capsules
+VV-VITA-124,1652.90,84.67,36,10575.33,2.26,243.00,141.75,In stock,Natural Vitamin C Organic Capsules,180 Capsules
+VV-VITA-366,1642.41,126.06,104,2327.14,1.28,664.00,820.24,In stock,Iron Gummies,90 Gummies
+VV-VITA-301,1632.23,100.36,53,5945.55,1.33,669.00,1561.00,In stock,ZMA Capsules: Zinc + Magnesium + Vitamin B6,120 Capsules
+VV-VITA-262,1541.69,104.24,124,1705.74,1.59,78.00,87.75,In stock,Bilberry & Pine Bark Extracts Capsules Organic,90 Capsules
+VV-VITA-336,1443.33,84.03,65,2583.14,0.96,812.00,738.18,In stock,Devil's Claw Extract Capsules Organic,90 Capsules
+VV-VITA-304,1286.43,98.85,57,4686.20,1.77,5023.00,2870.29,In stock,Folate Capsules,120 Capsules
+VV-VITA-146,1199.20,78.67,59,4684.64,1.41,2046.00,1397.27,In stock,Spirulina Tablets Organic,300 Tablets
+CP-DQMG-RVN9,1193.85,63.26,56,1920.84,0.81,1150.00,1293.75,In stock,Wild Yams + Zinc Capsules,120 Capsules
+VV-VITA-313,1133.24,66.16,67,5337.13,1.44,1768.00,1650.13,In stock,Boswellia Extract Capsules,120 Capsules
+VV-VITA-250,1124.19,64.29,74,2484.78,1.10,2502.00,4253.40,In stock,Brahmi Tablets Organic,180 Tablets
+VV-VITA-345,1090.43,53.13,63,3947.87,0.96,227.00,401.62,In stock,Serenity Complex Capsules,90 Capsules
+VV-VITA-257,1086.33,46.04,62,7956.41,1.73,610.00,776.36,In stock,Lecithin Oil Capsules Organic,120 Capsules
+VV-VITA-208,1046.01,66.22,24,8456.60,2.52,1924.00,1924.00,In stock,Horse Chestnut Capsules Organic,120 Capsules
+VV-VITA-317,1035.49,57.79,56,4275.26,1.54,2581.00,4014.89,In stock,Citrulline Plus Capsules,150 Capsules
+VV-VITA-320,1006.12,52.80,9,35876.86,6.61,6703.00,857.00,In stock,Vollagen + Hyaluronic Acid Complex Capsules,120 Capsules
+VV-VITA-158,1003.31,42.32,19,14836.94,2.96,422.00,144.10,In stock,Glucosamine Complex Capsules,180 Capsules
+VV-VITA-391,996.24,50.22,48,6018.73,1.59,18.00,20.16,In stock,Quercetin Complex Capsules,120 Capsules
+VV-VITA-206,994.08,64.53,60,2320.34,1.05,1687.00,1619.52,In stock,Artichoke Extract Capsules Organic,120 Capsules
+VV-VITA-382,862.90,51.57,93,2115.05,0.99,436.00,668.53,In stock,Taurine Powder,1 kg
+VV-VITA-237,830.34,51.16,27,9504.74,2.87,21.00,10.14,In stock,Choline Trio Capsules,90 Capsules
+VV-VITA-298,815.27,44.37,35,6098.50,1.54,2366.00,2137.03,In stock,Black Maca + Tribulus Capsules,120 Capsules
+VV-VITA-252,775.29,40.16,42,3796.71,0.98,32.00,41.60,In stock,Shiitake Extract Capsules,120 Capsules
+VV-VITA-351,723.46,41.50,42,2110.42,0.87,706.00,2353.33,In stock,Cordyceps Sinensis Extract Capsules Organic,60 Capsules
+VV-VITA-174,664.52,39.18,43,1575.03,0.48,85.00,340.00,In stock,Olive Leaf Extract Capsules,90 Capsules
+VV-VITA-111,652.13,38.03,41,2646.20,0.47,814.00,3798.67,In stock,Colon Care Complex Capsules,120 Capsules
+VV-VITA-386,644.24,32.81,59,2587.47,0.65,1065.00,3195.00,In stock,Femme Biotics Capsules,60 Capsules
+VV-VITA-407,625.66,40.47,24,3055.01,2.43,59.00,143.29,In stock,Green Supreme Complex Powder,270 g
+VV-VITA-204,620.82,40.48,49,1657.48,0.69,41.00,57.40,In stock,Devil's Claw Plus Capsules,120 Capsules
+VV-VITA-119,596.24,35.39,46,5776.88,1.88,7813.00,9511.48,In stock,Magnesium + Potassium Capsules,180 Capsules
+VV-VITA-248,577.60,26.36,38,9345.50,1.42,8633.00,8952.74,In stock,Oregano Oil Capsules Organic,90 Capsules
+VV-VITA-403,573.25,34.75,18,8714.50,1.90,-2.00,-3.00,Physical,Magnesium Citrate Powder,500 g
+VV-VITA-93,567.51,40.66,24,4728.71,1.60,91.00,101.11,In stock,Vitamin B12 Spray,25 ml
+VV-VITA-417,552.12,26.48,9,5341.75,2.97,557.00,236.30,In stock,Omega 3 Gummies,60 Gummies
+VV-VITA-94,546.73,24.53,10,14690.15,2.23,380.00,234.71,In stock,Pro Bio Capsules Organic,60 Capsules
+VV-VITA-151,546.46,25.84,23,10077.74,1.76,6607.00,4743.49,In stock,Female Balance Complex Capsules,180 Capsules
+CW-KVIN-V39Y,543.32,28.23,26,5273.27,1.23,598.00,279.07,In stock,D-Mannose Powder,250G
+VV-VITA-57-V,538.39,15.92,18,6835.59,0.92,532.00,558.60,In stock,Hyaluronic Acid Capsules,180 Capsules
+VV-VITA-215,518.10,31.46,25,5006.93,1.43,38.00,22.64,In stock,Horsetail Extract Capsules Organic,90 Capsules
+VV-VITA-199,502.85,27.59,35,3299.38,0.77,546.00,728.00,In stock,St. John's Wort + Passion Flower Capsules Organic,90 Capsules
+VV-VITA-264,471.84,20.28,19,5388.47,0.85,472.00,772.36,In stock,Mugwort Extract Capsules,180 Capsules
+VV-VITA-121,427.42,22.97,15,5659.58,1.01,908.00,1121.65,In stock,Female Harmony Complex Capsules,120 Capsules
+VV-VITA-295,407.33,19.52,39,2435.28,0.75,19.00,34.55,In stock,Sugar Balance Complex Capsules,120 Capsules
+VV-VITA-202,399.87,25.66,41,1958.25,0.78,1435.00,2609.09,In stock,Multivitamin Junior Spray,25 ml
+VV-VITA-395,387.39,21.72,25,5116.28,0.98,2700.00,3978.95,In stock,Zinc Bisglycinate Capsules,300 Capsules
+VV-VITA-371,290.08,22.74,21,3019.38,0.94,1470.00,1234.80,In stock,Nattokinase Capsules,180 Capsules
+VV-VITA-57-V2,282.55,13.77,15,3409.94,0.67,481.00,817.70,In stock,Hyaluronic Acid Capsules,90 Capsules
+VV-VITA-318,264.20,16.44,22,2463.53,1.20,554.00,501.24,In stock,Garlic Plus Capsules,90 Capsules
+VV-VITA-39,243.98,13.50,13,7340.67,1.60,3324.00,2164.47,In stock,D-Mannose Complex Capsules,120 Capsules
+VV-VITA-198,241.98,15.54,9,5638.06,1.46,1063.00,1294.09,In stock,Bromelain Capsules,120 Capsules
+VV-VITA-354,237.48,12.43,12,7716.66,1.58,1051.00,1177.12,In stock,Mushroom Complex Capsules Organic,90 Capsules
+VV-VITA-190,216.50,13.44,22,1733.12,1.28,212.00,106.00,In stock,Papaya Extract Capsules Organic,120 Capsules
+VV-VITA-346,215.90,19.00,20,682.39,0.63,88.00,136.00,In stock,Chromium Plus Capsules,90 Capsules
+VV-VITA-338,212.48,11.93,14,6600.06,1.33,825.00,624.32,In stock,Turmeric Capsules Organic,120 Capsules
+VV-VITA-385,204.13,13.12,18,1608.20,0.60,1352.00,2568.80,In stock,Evening Primrose Oil Capsules,120 Capsules
+VV-VITA-349,183.67,11.40,25,858.76,1.00,871.00,677.44,In stock,Fenugreek Capsules Organic,120 Capsules
+VV-VITA-157,170.49,14.30,9,4041.11,1.59,783.00,498.27,In stock,Hawthorn Extract Capsules Organic,60 Capsules
+VV-VITA-258,167.19,10.02,11,3353.54,0.69,70.00,78.40,In stock,Flaxseed Oil Capsules Organic,120 Capsules
+VV-VITA-168,154.11,8.06,5,4011.97,1.40,0.00,0.00,Physical,Sun Care Complex Capsules,180 Capsules
+VV-VITA-171,150.28,5.93,7,10031.07,1.76,2558.00,1989.56,In stock,Vision Care Complex Capsules,120 Capsules
+VV-VITA-02,124.43,7.87,9,1763.91,0.90,39.00,55.25,In stock,Milk Thistle Extract Capsules,120 Capsules
+VV-VITA-31,118.27,6.82,6,4606.23,1.30,0.00,0.00,Physical,Papaya Enzyme Capsules,120 Capsules
+VV-VITA-379,112.01,7.33,8,6028.12,1.94,674.00,555.06,In stock,Glucosamine Plus Capsules,120 Capsules
+VV-VITA-378,111.25,8.75,14,1013.01,0.47,403.00,940.33,In stock,Brewer's Yeast Capsules,120 Capsules
+BJ-E223-8EKW,76.78,3.01,3,11466.79,1.72,19220.00,12613.12,In stock,Moringa Oleifera Capsules Organic,270 Capsules
+VV-VITA-413,47.47,1.87,3,1070.08,0.79,843.00,1242.32,In stock,Q10 Capsules,120 Capsules
+VV-VITA-344,46.30,2.28,2,9446.08,2.28,0.00,0.00,Physical,Ashwagandha KSM-66 Extract Capsules Organic,180 Capsules
+VV-VITA-129,43.08,2.40,4,1235.96,0.78,1287.00,1011.21,In stock,Ginger Organic Capsules,120 Capsules
+VV-VITA-303,30.99,1.78,3,2697.94,0.89,0.00,0.00,Physical,Drenaflux Complex Capsules,120 Capsules
+VV-VITA-307,25.56,1.80,3,1209.02,0.61,1162.00,2324.00,In stock,Vitamin B3 Capsules,180 Capsules
+VV-VITA-109,15.22,0.94,1,4294.19,0.89,7.00,6.76,In stock,Liver Active Complex Capsules,90 Capsules
+VV-VITA-277,0.00,0.00,0,2845.61,0.80,385.00,310.96,In stock,Vitamin B12 Junior Spray,25 ml
+VV-VITA-265,0.00,0.00,0,42.42,,168.00,,In stock,Ginkgo + Ginseng Extract Capsules,120 Capsules
 VV-VITA-294,0.00,0.00,0,0.00,,0.00,,Pre-launch,Artichoke and Black Radish Extracts Capsules Organic,Default Title
-VV-VITA-277,0.00,0.00,0,2626.28,0.79,548.00,639.33,In stock,Vitamin B12 Junior Spray,25 ml
-VV-VITA-284,0.00,0.00,0,2739.07,0.65,107.00,124.83,In stock,Chaga Extract Capsules Organic,90 Capsules
-VV-VITA-274,0.00,0.00,0,0.00,,346.00,,Pre-launch,Cysti-Aid Capsules,120 Capsules
-VV-VITA-259,0.00,0.00,0,7323.20,1.22,126.00,113.81,In stock,Mushroom Mix Complex Capsules,120 Capsules
-VV-VITA-265,0.00,0.00,0,0.00,,170.00,,Pre-launch,Ginkgo + Ginseng Extract Capsules,120 Capsules
-VV-VITA-266,0.00,0.00,0,0.00,,-10.00,,Pre-launch,Moringa Oleifera Tablets Organic,180 Tablets
-VV-VITA-247,0.00,0.00,0,6596.22,1.40,84.00,65.33,In stock,Astaxanthin Oil Capsules,60 Capsules
-VV-VITA-236,0.00,0.00,0,0.00,,0.00,,Pre-launch,Maca Extrakt,Default Title
+VV-VITA-274,0.00,0.00,0,59.73,,343.00,,In stock,Cysti-Aid Capsules,120 Capsules
 VV-VITA-227,0.00,0.00,0,0.00,,0.00,,Pre-launch,Evening Primrose Oil & Borage Seed Capsules Organic,90 Capsules
-VV-VITA-225,0.00,0.00,0,6533.26,1.42,1395.00,549.55,In stock,Shilajit Extract Capsules,90 Capsules
-VV-VITA-166,0.00,0.00,0,2386.79,0.75,836.00,590.12,In stock,Triphala Capsules Organic,180 Capsules
-VV-VITA-160,0.00,0.00,0,0.00,,0.00,,Pre-launch,L-Arginine Plus Capsules,180 Capsules
-VV-VITA-188,0.00,0.00,0,2333.14,0.85,60.00,92.31,In stock,Stinging Nettle Capsules Organic,120 Capsules
-VV-VITA-189,0.00,0.00,0,2372.99,0.55,263.00,409.11,In stock,Rosehip Capsules Organic,180 Capsules
-VV-VITA-207,0.00,0.00,0,3852.50,1.21,2009.00,1687.56,In stock,Astragalus Extract Capsules Organic,120 Capsules
+VV-VITA-259,0.00,0.00,0,7753.29,1.27,103.00,90.12,In stock,Mushroom Mix Complex Capsules,120 Capsules
+VV-VITA-247,0.00,0.00,0,6728.37,1.48,2947.00,2062.90,In stock,Astaxanthin Oil Capsules,60 Capsules
+VV-VITA-236,0.00,0.00,0,0.00,,0.00,,Pre-launch,Maca Extrakt,Default Title
 VV-VITA-181,0.00,0.00,0,0.00,,0.00,,Pre-launch,Sage Extract Capsules Organic,120 Capsules
-VV-VITA-170,0.00,0.00,0,3637.41,0.98,301.00,301.00,In stock,Vitamin B3 (Nicotinamide) Capsules,180 Capsules
-VV-VITA-165,0.00,0.00,0,5869.40,0.99,1126.00,2101.87,In stock,Resveratrol Plus Capsules,60 Capsules
-VV-VITA-104,0.00,0.00,0,603.91,0.79,1066.00,2487.33,In stock,Echinacea Purpurea Extract Capsules,120 Capsules
-Regeneration_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Reboot Set,Default Title
-Sunkissed-set,0.00,0.00,0,0.00,,0.00,,Pre-launch,Sunkissed Set,Default Title
-VI-ZU99-SZ0B,0.00,0.00,0,3002.59,0.85,310.00,387.50,In stock,L-Tryptophan Capsules,120 Capsules
-VV-ALO-06,0.00,0.00,0,17.90,,1023.00,,In stock,MSM Powder,1 kg / Container
-NX-CVPF-VCEZ-NEU,0.00,0.00,0,0.00,,0.00,,Pre-launch,,
+VV-VITA-170,0.00,0.00,0,3637.41,1.15,1495.00,1101.58,In stock,Vitamin B3 (Nicotinamide) Capsules,180 Capsules
+VV-VITA-165,0.00,0.00,0,6238.27,1.03,3122.00,3496.64,In stock,Resveratrol Plus Capsules,60 Capsules
+VV-VITA-160,0.00,0.00,0,0.00,,0.00,,Pre-launch,L-Arginine Plus Capsules,180 Capsules
+VV-VITA-207,0.00,0.00,0,4098.15,1.24,1868.00,1803.59,In stock,Astragalus Extract Capsules Organic,120 Capsules
+VV-VITA-225,0.00,0.00,0,6677.71,1.62,1684.00,1473.50,In stock,Shilajit Extract Capsules,90 Capsules
+VV-VITA-189,0.00,0.00,0,2413.18,0.59,402.00,1105.50,In stock,Rosehip Capsules Organic,180 Capsules
+VV-VITA-188,0.00,0.00,0,2381.47,0.64,1321.00,4403.33,In stock,Stinging Nettle Capsules Organic,120 Capsules
+VV-VITA-166,0.00,0.00,0,2469.78,0.81,1214.00,1618.67,In stock,Triphala Capsules Organic,180 Capsules
 Performance_Push_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Ready? Go! Set,Default Title
-VV-VITA-115,0.00,0.00,0,346.64,,-10.00,-5.83,In stock,Pro Bio Junior Powder Organic,75 g
-VV-VITA-116,0.00,0.00,0,3712.75,0.86,685.00,1065.56,In stock,Natural Iodine Organic Capsules,180 Capsules
+VV-VITA-266,0.00,0.00,0,33.45,,13284.00,66420.00,In stock,Moringa Oleifera Tablets Organic,180 Tablets
+VV-VITA-284,0.00,0.00,0,2872.37,0.61,1421.00,2131.50,In stock,Chaga Extract Capsules Organic,90 Capsules
+VV-ALO-06,0.00,0.00,0,106.47,,914.00,1980.33,In stock,MSM Powder,1 kg / Container
+VV-VITA-101,0.00,0.00,0,8052.13,1.48,52.00,85.65,In stock,Rhodiola Rosea Extract Capsules,120 Capsules
+Regeneration_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Reboot Set,Default Title
+VV-VITA-105,0.00,0.00,0,1284.52,0.62,94.00,169.20,In stock,Panax Ginseng Extract Capsules,120 Capsules
+VV-VITA-104,0.00,0.00,0,661.98,0.67,1603.00,2404.50,In stock,Echinacea Purpurea Extract Capsules,120 Capsules
 VV-VITA-119-NEU2,0.00,0.00,0,0.00,,0.00,,Pre-launch,,
-VV-VITA-136,0.00,0.00,0,3904.71,1.14,1260.00,840.00,In stock,Light Legs Complex Capsules,120 Capsules
-Agility_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Loosen Up Set,Default Title
-2R-49NC-R697,0.00,0.00,0,17.90,,1014.00,,In stock,MSM Powder,1 kg / Pouch
+VV-VITA-116,0.00,0.00,0,3849.94,0.84,676.00,1183.00,In stock,Natural Iodine Organic Capsules,180 Capsules
+VV-VITA-136,0.00,0.00,0,4076.20,1.16,3341.00,3017.68,In stock,Light Legs Complex Capsules,120 Capsules
+VV-VITA-143,0.00,0.00,0,370.49,1.43,3481.00,2436.70,In stock,Vitamin B12 Plus Capsules,180 Capsules
+Active_Lifestyle_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,All Day Athlete Set,Default Title
+NX-CVPF-VCEZ-NEU,0.00,0.00,0,0.00,,0.00,,Pre-launch,,
+NX-CVPF-VCEZ,0.00,0.00,0,5723.72,1.31,132.00,154.00,In stock,Reishi Extract Capsules,120 Capsules
 Mental_Focus_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Clever Mind Set,Default Title
 Menopause_Set,0.00,0.00,0,0.00,,0.00,,Pre-launch,Menopause Set,Default Title
 Immune_System_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Shield Set,Default Title
@@ -161,72 +165,70 @@ Digestion_Health_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Happy Gutfeeling Set,D
 Detox_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Deep Clean Set,Default Title
 Daily_Vegan_Set,0.00,0.00,0,0.00,,0.00,,Pre-launch,Daily Vegan Set,Default Title
 Beauty_Set_3-0,0.00,0.00,0,0.00,,0.00,,Pre-launch,Beauty Elixir Set,Default Title
-Active_Lifestyle_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,All Day Athlete Set,Default Title
-NX-CVPF-VCEZ,0.00,0.00,0,5649.38,1.27,137.00,174.36,In stock,Reishi Extract Capsules,120 Capsules
-VV-VITA-109,0.00,0.00,0,4226.91,0.96,16.00,14.45,In stock,Liver Active Complex Capsules,90 Capsules
-VV-VITA-105,0.00,0.00,0,1196.28,0.64,99.00,198.00,In stock,Panax Ginseng Extract Capsules,120 Capsules
-VV-VITA-101,0.00,0.00,0,7832.68,1.58,70.00,89.09,In stock,Rhodiola Rosea Extract Capsules,120 Capsules
-VV-VITA-153,0.00,0.00,0,8474.48,1.88,132.00,97.26,In stock,Ashwagandha Capsules Organic,180 Capsules
-VV-VITA-143,0.00,0.00,0,35.99,,3503.00,,In stock,Vitamin B12 Plus Capsules,180 Capsules
-VV-VITA-332,0.00,0.00,0,0.00,,0.00,,Pre-launch,Men Multivitamin Complex Capsules,Default Title
-VV-VITA-333,0.00,0.00,0,0.00,,0.00,,Pre-launch,Electrolyte Plus Capsules,120 Capsules
-VV-VITA-335,0.00,0.00,0,0.00,,0.00,,Pre-launch,Brahmi + Hericium Capsules Organic,Default Title
-VV-VITA-344,0.00,0.00,0,8869.09,2.24,153.00,63.00,In stock,Ashwagandha KSM-66 Extract Capsules Organic,180 Capsules
+2R-49NC-R697,0.00,0.00,0,598.78,,1395.00,490.14,In stock,MSM Powder,1 kg / Pouch
+Agility_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Loosen Up Set,Default Title
+VV-VITA-115,0.00,0.00,0,346.64,,-10.00,-5.83,In stock,Pro Bio Junior Powder Organic,75 g
+VV-VITA-153,0.00,0.00,0,8625.10,1.67,772.00,697.29,In stock,Ashwagandha Capsules Organic,180 Capsules
+Sunkissed-set,0.00,0.00,0,0.00,,0.00,,Pre-launch,Sunkissed Set,Default Title
+VI-ZU99-SZ0B,0.00,0.00,0,3152.03,0.81,808.00,1243.08,In stock,L-Tryptophan Capsules,120 Capsules
 VV-VITA-343,0.00,0.00,1,477.75,1.79,0.00,0.00,Discontinued,Clorophyll Drops,60 ml
-VV-VITA-342,0.00,0.00,1,14286.16,2.50,770.00,326.67,In stock,Vitamin D3 + K2 Drops,31.5 ml
-VV-VITA-340,0.00,0.00,0,0.00,,0.00,,Pre-launch,Milk Thistle Plus Capsules,120 Capsules
-VV-VITA-337,0.00,0.00,0,44.37,,0.00,,In stock,Rocket Complex Capsules,60 Capsules
-VV-VITA-319,0.00,0.00,0,1355.46,0.47,685.00,978.57,In stock,Chia Seed Oil Capsules Organic,120 Capsules
+VV-VITA-342,0.00,0.00,1,14468.83,2.21,756.00,542.77,In stock,Vitamin D3 + K2 Drops,31.5 ml
+VV-VITA-319,0.00,0.00,0,1355.46,0.48,619.00,990.40,In stock,Chia Seed Oil Capsules Organic,120 Capsules
 VV-VITA-322,0.00,0.00,0,0.00,,0.00,,Pre-launch,Potassium Capsules,Default Title
-VV-VITA-31,0.00,0.00,0,4468.23,1.45,10.00,4.33,In stock,Papaya Enzyme Capsules,120 Capsules
-VV-VITA-377,0.00,0.00,0,5542.78,1.68,645.00,547.27,In stock,Choline Bitartrate Capsules,120 Capsules
-VV-VITA-376,0.00,0.00,0,2714.93,0.86,658.00,921.20,In stock,Griffonia Extract (5-HTP) Capsules,90 Capsules
-VV-VITA-375,0.00,0.00,0,2780.88,0.62,283.00,566.00,In stock,Strong Bones Complex Tablets,180 Tablets
-VV-VITA-374,0.00,0.00,1,1282.45,0.84,211.00,263.75,In stock,Psyllium Husks Organic,400 g
-VV-VITA-373,0.00,0.00,0,793.23,1.64,-10.00,-35.00,Discontinued,Keto Power Complex Capsules,60 Capsules
-VV-VITA-370,0.00,0.00,0,0.00,,0.00,,Pre-launch,Magnesium Bisglycinate Capsules,180 Capsules
-VV-VITA-368,0.00,0.00,0,3212.65,0.96,214.00,260.52,In stock,L-Glutamine Powder,500 g
-VV-VITA-369,0.00,0.00,0,1647.59,2.66,656.00,510.22,In stock,Glucomannan Capsules Organic,90 Capsules
-VV-VITA-362,0.00,0.00,0,768.80,0.40,3044.00,5327.00,In stock,Echinacea Plus Capsules,120 Capsules
-VV-VITA-365,0.00,0.00,0,1309.08,1.67,161.00,66.29,In stock,Apple Cider Vinegar Gummies,90 Gummies
-VV-VITA-363,0.00,0.00,0,2166.00,0.94,688.00,722.40,In stock,Apple Cider Vinegar Complex Capsules,120 Capsules
-VV-VITA-348,0.00,0.00,0,0.00,,0.00,,Pre-launch,Vegan Pregnancy Complex Capsules,Default Title
-VV-VITA-358,0.00,0.00,0,1542.95,0.50,-5.00,-8.75,Discontinued,OPC Trio Capsules,120 Capsules
-VV-VITA-359,0.00,0.00,0,3048.04,0.59,148.00,251.60,In stock,Red Yeast Rice Plus Capsules,120 Capsules
-VV-VITA-360,0.00,0.00,0,0.00,,0.00,,Pre-launch,Caffeine Capsules,120 Capsules
-VV-VITA-361,0.00,0.00,0,8743.88,2.39,1010.00,565.60,In stock,Rapunzel Complex Capsules,120 Capsules
-VV-VITA-350,0.00,0.00,0,61.21,,-3.00,,In stock,FenoLact Complex Capsules,90 Capsules
-VV-VITA-347,0.00,0.00,0,0.00,,0.00,,Pre-launch,B-Active Complex Capsules,90 Capsules
-VV-VITA-314,0.00,0.00,0,41.81,,738.00,,In stock,Glycine Powder,1 kg
-VV-VITA-316,0.00,0.00,0,2390.70,1.09,209.00,167.20,In stock,Ceylon Cinnamon Extract Capsules Organic,120 Capsules
-VV-VITA-303,0.00,0.00,0,2530.26,0.92,17.00,19.04,In stock,Drenaflux Complex Capsules,120 Capsules
+VV-VITA-340,0.00,0.00,0,0.00,,0.00,,Pre-launch,Milk Thistle Plus Capsules,120 Capsules
 VV-VITA-331,0.00,0.00,0,752.98,0.43,0.00,0.00,Discontinued,Nootropic Pro Complex Capsules,90 Capsules
+VV-VITA-333,0.00,0.00,0,0.00,,0.00,,Pre-launch,Electrolyte Plus Capsules,120 Capsules
+VV-VITA-332,0.00,0.00,0,0.00,,0.00,,Pre-launch,Men Multivitamin Complex Capsules,Default Title
+VV-VITA-335,0.00,0.00,0,0.00,,0.00,,Pre-launch,Brahmi + Hericium Capsules Organic,Default Title
+VV-VITA-337,0.00,0.00,0,44.37,,0.00,,In stock,Rocket Complex Capsules,60 Capsules
+VV-VITA-376,0.00,0.00,0,2895.38,0.91,1109.00,895.73,In stock,Griffonia Extract (5-HTP) Capsules,90 Capsules
+VV-VITA-377,0.00,0.00,0,5720.72,1.57,325.00,350.00,In stock,Choline Bitartrate Capsules,120 Capsules
+VV-VITA-374,0.00,0.00,1,1340.51,0.78,388.00,1034.67,In stock,Psyllium Husks Organic,400 g
+VV-VITA-375,0.00,0.00,0,2952.97,0.67,1173.00,2526.46,In stock,Strong Bones Complex Tablets,180 Tablets
+VV-VITA-373,0.00,0.00,0,793.23,1.64,-10.00,-35.00,Discontinued,Keto Power Complex Capsules,60 Capsules
+VV-VITA-368,0.00,0.00,0,3266.61,0.90,269.00,502.13,In stock,L-Glutamine Powder,500 g
+VV-VITA-369,0.00,0.00,0,1823.51,2.54,980.00,623.64,In stock,Glucomannan Capsules Organic,90 Capsules
+VV-VITA-370,0.00,0.00,0,987.72,,8911.00,1022.57,In stock,Magnesium Bisglycinate Capsules,180 Capsules
+VV-VITA-365,0.00,0.00,0,1351.34,1.47,557.00,309.44,In stock,Apple Cider Vinegar Gummies,90 Gummies
+VV-VITA-347,0.00,0.00,0,0.00,,0.00,,Pre-launch,B-Active Complex Capsules,90 Capsules
+VV-VITA-358,0.00,0.00,0,1542.95,0.50,-5.00,-8.75,Discontinued,OPC Trio Capsules,120 Capsules
+VV-VITA-359,0.00,0.00,0,3086.12,0.63,224.00,403.20,In stock,Red Yeast Rice Plus Capsules,120 Capsules
+VV-VITA-360,0.00,0.00,0,0.00,,0.00,,Pre-launch,Caffeine Capsules,120 Capsules
+VV-VITA-361,0.00,0.00,0,9028.81,2.38,6684.00,4158.93,In stock,Rapunzel Complex Capsules,120 Capsules
+VV-VITA-362,0.00,0.00,0,808.62,0.37,3042.00,12168.00,In stock,Echinacea Plus Capsules,120 Capsules
+VV-VITA-363,0.00,0.00,0,2213.88,0.96,862.00,1400.75,In stock,Apple Cider Vinegar Complex Capsules,120 Capsules
+VV-VITA-350,0.00,0.00,0,61.21,,-3.00,,In stock,FenoLact Complex Capsules,90 Capsules
+VV-VITA-348,0.00,0.00,0,0.00,,0.00,,Pre-launch,Vegan Pregnancy Complex Capsules,Default Title
 VV-VITA-327,0.00,0.00,0,0.00,,0.00,,Pre-launch,L-Carnitine Plus Capsules,120 Capsules
-VV-VITA-326,0.00,0.00,0,4171.64,1.02,407.00,345.33,In stock,Griffonia Plus Capsules,90 Capsules
-VV-VITA-389,0.00,0.00,0,6951.69,1.71,18.00,18.00,In stock,Prosta-X Complex Capsules,180 Capsules
+VV-VITA-326,0.00,0.00,0,4367.78,1.00,160.00,186.67,In stock,Griffonia Plus Capsules,90 Capsules
+VV-VITA-316,0.00,0.00,0,2426.88,1.06,612.00,693.60,In stock,Ceylon Cinnamon Extract Capsules Organic,120 Capsules
+VV-VITA-314,0.00,0.00,0,455.17,1.64,440.00,267.83,In stock,Glycine Powder,1 kg
+VV-VITA-399,0.00,0.00,0,443.34,0.79,415.00,1328.00,In stock,Glucomannan Complex Capsules,180 Capsules
+VV-VITA-398,0.00,0.00,0,2944.48,1.40,1275.00,1115.62,In stock,Multivitamin Junior Gummies,60 Gummies
+VV-VITA-393,0.00,0.00,0,613.25,1.06,1558.00,1558.00,In stock,BCAA Powder Mango,450 g
+VV-VITA-392,0.00,0.00,0,119.44,0.50,161.00,345.00,In stock,GABA Capsules,90 Capsules
 VV-VITA-388,0.00,0.00,0,0.00,,-4.00,,Pre-launch,Glycine Powder,300 g
-VV-VITA-387,0.00,0.00,0,3158.07,2.10,485.00,798.82,In stock,Youth Biotics Capsules,60 Capsules
-VV-VITA-392,0.00,0.00,0,71.37,,164.00,,In stock,GABA Capsules,90 Capsules
-VV-VITA-398,0.00,0.00,0,2733.89,1.27,513.00,414.35,In stock,Multivitamin Junior Gummies,60 Gummies
+VV-VITA-383,0.00,0.00,0,1592.71,0.59,1989.00,3646.50,In stock,Vitamin K2 Tablets,180 Tablets
+VV-VITA-389,0.00,0.00,0,7438.07,1.63,1007.00,640.82,In stock,Prosta-X Complex Capsules,180 Capsules
 VV-VITA-384,0.00,0.00,0,0.00,,0.00,,Pre-launch,Beta Alanine Powder,500 g
-VV-VITA-380,0.00,0.00,0,1179.59,0.77,627.00,1205.77,In stock,Party Hero Complex Tablets,60 Tablets
-VV-VITA-383,0.00,0.00,0,1538.47,0.64,1707.00,1920.38,In stock,Vitamin K2 Tablets,180 Tablets
-VV-VITA-409,0.00,0.00,0,0.00,,1425.00,,Pre-launch,Magnesium Citrate Capsules,180 Capsules
-VV-VITA-408,0.00,0.00,0,1462.46,1.04,315.00,369.78,In stock,Gut Routine Powder,300 g
+VV-VITA-380,0.00,0.00,0,1239.43,0.62,881.00,2055.67,In stock,Party Hero Complex Tablets,60 Tablets
+VV-VITA-387,0.00,0.00,0,3234.57,2.39,472.00,495.60,In stock,Youth Biotics Capsules,60 Capsules
+VV-VITA-411,0.00,0.00,0,1975.41,0.78,476.00,714.00,In stock,Digestive Enzymes Pro Capsules,120 Capsules
+VV-VITA-410,0.00,0.00,0,1063.65,0.51,1561.00,2571.06,In stock,OPC Capsules,240 Capsules
+VV-VITA-409,0.00,0.00,0,51.05,,2766.00,8298.00,In stock,Magnesium Citrate Capsules,180 Capsules
+VV-VITA-408,0.00,0.00,0,1397.31,0.74,459.00,642.60,In stock,Gut Routine Powder,300 g
 VV-VITA-406,0.00,0.00,0,0.00,,0.00,,Pre-launch,Vitamin B12 Tablets non DE,180 Tablets
-VV-VITA-405,0.00,0.00,0,1634.14,0.95,116.00,143.29,In stock,Vitamin B12 Tablets,180 Tablets
-VV-VITA-402,0.00,0.00,0,3472.37,0.77,437.00,322.00,In stock,Un-Bloat Capsules,120 Capsules
-VV-VITA-404,0.00,0.00,0,0.00,,229.00,,Pre-launch,Sage Extract Capsules,120 Capsules
-VV-VITA-400,0.00,0.00,0,357.24,1.00,401.00,401.00,In stock,Keto Power Complex Capsules,90 Capsules
-VV-VITA-401,0.00,0.00,0,39.90,,708.00,,In stock,Vitex Agnus-Castus Capsules,240 Capsules
-VV-VITA-394,0.00,0.00,0,2670.17,0.92,153.00,204.00,In stock,EAA Powder Peach,400 g
-VV-VITA-393,0.00,0.00,0,613.25,1.00,833.00,833.00,In stock,BCAA Powder Mango,450 g
-VV-VITA-399,0.00,0.00,0,403.20,0.81,129.00,322.50,In stock,Glucomannan Complex Capsules,180 Capsules
-VV-VITA-411,0.00,0.00,0,1834.33,0.76,228.00,375.53,In stock,Digestive Enzymes Pro Capsules,120 Capsules
-VV-VITA-412,0.00,0.00,0,172.51,,463.00,529.14,In stock,Lactase Tablets,180 Tablets
-VV-VITA-414,0.00,0.00,0,203.99,0.53,574.00,1607.20,In stock,Hericium Capsules,180 Capsules
-VV-VITA-415,0.00,0.00,0,157.95,0.50,355.00,710.00,In stock,PMS Capsules,120 Capsules
-VV-VITA-410,0.00,0.00,0,861.76,0.47,1480.00,2762.67,In stock,OPC Capsules,240 Capsules
+VV-VITA-405,0.00,0.00,0,1722.76,0.80,110.00,192.50,In stock,Vitamin B12 Tablets,180 Tablets
+VV-VITA-404,0.00,0.00,0,49.82,,406.00,1624.00,In stock,Sage Extract Capsules,120 Capsules
+VV-VITA-402,0.00,0.00,0,3609.33,0.82,1151.00,1111.31,In stock,Un-Bloat Capsules,120 Capsules
+VV-VITA-394,0.00,0.00,0,2774.92,0.67,144.00,212.21,In stock,EAA Powder Peach,400 g
+VV-VITA-401,0.00,0.00,0,133.74,0.50,1003.00,2173.17,In stock,Vitex Agnus-Castus Capsules,240 Capsules
+VV-VITA-400,0.00,0.00,0,406.72,0.92,1078.00,1676.89,In stock,Keto Power Complex Capsules,90 Capsules
+VV-VITA-414,0.00,0.00,0,274.66,0.41,571.00,1598.80,In stock,Hericium Capsules,180 Capsules
+VV-VITA-415,0.00,0.00,0,283.56,0.46,589.00,1472.50,In stock,PMS Capsules,120 Capsules
+VV-VITA-416,0.00,0.00,0,0.00,,0.00,,Pre-launch,Calcium Capsules,180 Capsules
+VV-VITA-418,0.00,0.00,0,0.00,,0.00,,Pre-launch,Folate Tablets,240 Tablets
+VV-VITA-412,0.00,0.00,0,207.40,0.63,1157.00,4242.33,In stock,Lactase Tablets,180 Tablets
 VV-VITA-426,0.00,0.00,0,0.00,,0.00,,Pre-launch,Hydration Powder,390 g
 VV-VITA-425,0.00,0.00,0,0.00,,0.00,,Pre-launch,Pre-Workout Powder,350 g
 VV-VITA-424,0.00,0.00,0,0.00,,0.00,,Pre-launch,Vitamin B6 Tablets,365 Tablets
@@ -234,9 +236,9 @@ VV-VITA-423,0.00,0.00,0,0.00,,0.00,,Pre-launch,Protein Vanilla Powder,600 g
 VV-VITA-421,0.00,0.00,0,0.00,,0.00,,Pre-launch,Shilajit Resin,30 g
 VV-VITA-422,0.00,0.00,0,0.00,,0.00,,Pre-launch,Protein Chocolate Powder,600 g
 VV-VITA-420,0.00,0.00,0,0.00,,0.00,,Pre-launch,Shilajit Complex Capsules,90 Capsules
-VV-VITA-418,0.00,0.00,0,0.00,,0.00,,Pre-launch,Folate Tablets,240 Tablets
-VV-VITA-90,0.00,0.00,0,8407.35,4.88,2062.00,583.19,In stock,Beta Carotene Capsules,180 Capsules
-VV-VITA-63,0.00,0.00,0,4152.93,1.08,330.00,866.25,In stock,Cordyceps Sinensis Extract Capsules,120 Capsules
+VV-VITA-419,0.00,0.00,0,0.00,,0.00,,Pre-launch,L-Lysin Capsules,240 Capsules
+VV-VITA-90,0.00,0.00,0,8488.60,4.49,1182.00,1741.89,In stock,Beta Carotene Capsules,180 Capsules
+VV-VITA-63,0.00,0.00,0,4383.78,1.01,316.00,520.47,In stock,Cordyceps Sinensis Extract Capsules,120 Capsules
 VV-VITA-99,0.00,0.00,0,0.00,,0.00,,Pre-launch,Vitamin D3 + K2 Spray,Default Title
 Vegan_Basics_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Everyday Vegan Set,Default Title
 Vitality_Set_3,0.00,0.00,0,0.00,,0.00,,Pre-launch,Fountain of Youth Set,Default Title
