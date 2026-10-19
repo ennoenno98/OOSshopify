@@ -3,12 +3,12 @@ sku,product_title,variant_title,current_price,status
 2R-49NC-R697,MSM Powder,1 kg / Pouch,14.90,ACTIVE
 Active_Lifestyle_Set_3,All Day Athlete Set,Default Title,64.53,ACTIVE
 Agility_Set_3,Loosen Up Set,Default Title,57.33,ACTIVE
-BJ-E223-8EKW,Moringa Oleifera Capsules Organic,270 Capsules,24.90,ACTIVE
+BJ-E223-8EKW,Moringa Oleifera Capsules Organic,270 Capsules,19.92,ACTIVE
 Beauty_Set_3-0,Beauty Elixir Set,Default Title,73.53,ACTIVE
 CP-DQMG-RVN9,Wild Yams + Zinc Capsules,120 Capsules,21.90,ACTIVE
 CW-KVIN-V39Y,D-Mannose Powder,250G,20.90,ACTIVE
 Daily_Vegan_Set,Daily Vegan Set,Default Title,55.70,DRAFT
-Detox_Set_3,Deep Clean Set,Default Title,48.33,ACTIVE
+Detox_Set_3,Deep Clean Set,Default Title,48.33,DRAFT
 Digestion_Health_Set_3,Happy Gutfeeling Set,Default Title,64.53,ACTIVE
 Dreamcatcher_Set_3,Dream Catcher Set,Default Title,55.53,ACTIVE
 Emotional_Balance_Set_3,Peace of Mind Set,Default Title,56.43,ACTIVE
@@ -44,7 +44,7 @@ VV-VITA-122,Immu Pro Complex Capsules,120 Capsules,22.90,ACTIVE
 VV-VITA-124,Natural Vitamin C Organic Capsules,180 Capsules,23.90,ACTIVE
 VV-VITA-127,Saffron Extract Capsules,120 Capsules,24.90,ACTIVE
 VV-VITA-129,Ginger Organic Capsules,120 Capsules,18.90,ACTIVE
-VV-VITA-136,Light Legs Complex Capsules,120 Capsules,19.90,ACTIVE
+VV-VITA-136,Light Legs Complex Capsules,120 Capsules,15.92,ACTIVE
 VV-VITA-142,Prostaid Complex Capsules,180 Capsules,25.90,ACTIVE
 VV-VITA-143,Vitamin B12 Plus Capsules,180 Capsules,20.90,ACTIVE
 VV-VITA-146,Spirulina Tablets Organic,300 Tablets,19.90,ACTIVE
@@ -54,8 +54,8 @@ VV-VITA-155,Reishi Extract Capsules Organic,90 Capsules,20.90,ACTIVE
 VV-VITA-157,Hawthorn Extract Capsules Organic,60 Capsules,13.90,ACTIVE
 VV-VITA-158,Glucosamine Complex Capsules,180 Capsules,31.90,ACTIVE
 VV-VITA-159,EAA Tablets,300 Tablets,25.90,ACTIVE
-VV-VITA-160,L-Arginine Plus Capsules,180 Capsules,19.90,ACTIVE
-VV-VITA-165,Resveratrol Plus Capsules,60 Capsules,28.90,ACTIVE
+VV-VITA-160,L-Arginine Plus Capsules,180 Capsules,19.90,ARCHIVED
+VV-VITA-165,Resveratrol Plus Capsules,60 Capsules,23.12,ACTIVE
 VV-VITA-166,Triphala Capsules Organic,180 Capsules,19.90,ACTIVE
 VV-VITA-168,Sun Care Complex Capsules,180 Capsules,23.90,ACTIVE
 VV-VITA-170,Vitamin B3 (Nicotinamide) Capsules,180 Capsules,18.90,ACTIVE
@@ -63,7 +63,7 @@ VV-VITA-171,Vision Care Complex Capsules,120 Capsules,27.90,ACTIVE
 VV-VITA-172,Maitake Capsules Organic,60 Capsules,19.90,ACTIVE
 VV-VITA-173,Lion's Mane Capsules Organic,60 Capsules,19.90,ACTIVE
 VV-VITA-174,Olive Leaf Extract Capsules,90 Capsules,18.90,ACTIVE
-VV-VITA-181,Sage Extract Capsules Organic,120 Capsules,17.90,ACTIVE
+VV-VITA-181,Sage Extract Capsules Organic,120 Capsules,17.90,ARCHIVED
 VV-VITA-183,Reflu-X Complex Capsules,120 Capsules,25.90,ACTIVE
 VV-VITA-186,Chlorella Capsules Organic,180 Tablets,25.90,ACTIVE
 VV-VITA-188,Stinging Nettle Capsules Organic,120 Capsules,17.90,ACTIVE
@@ -83,7 +83,7 @@ VV-VITA-216,Kudzu Plus Capsules,180 Capsules,19.90,ACTIVE
 VV-VITA-222,Black Cumin Seed Oil Capsules Organic,180 Capsules,23.90,ACTIVE
 VV-VITA-223,Omega 3 Oil Capsules,90 Capsules,23.90,ACTIVE
 VV-VITA-224,Vegan Essentials Complex Capsules,120 Capsules,19.90,ACTIVE
-VV-VITA-225,Shilajit Extract Capsules,90 Capsules,20.90,ACTIVE
+VV-VITA-225,Shilajit Extract Capsules,90 Capsules,16.72,ACTIVE
 VV-VITA-227,Evening Primrose Oil & Borage Seed Capsules Organic,90 Capsules,20.90,ACTIVE
 VV-VITA-228,Vitamin D3 + K2 Oil Capsules,120 Capsules,22.90,ACTIVE
 VV-VITA-230,Berberine Plus Capsules,90 Capsules,25.90,ACTIVE
@@ -103,7 +103,7 @@ VV-VITA-259,Mushroom Mix Complex Capsules,120 Capsules,25.90,ACTIVE
 VV-VITA-262,Bilberry & Pine Bark Extracts Capsules Organic,90 Capsules,19.90,ACTIVE
 VV-VITA-264,Mugwort Extract Capsules,180 Capsules,25.90,ACTIVE
 VV-VITA-265,Ginkgo + Ginseng Extract Capsules,120 Capsules,23.90,ACTIVE
-VV-VITA-266,Moringa Oleifera Tablets Organic,180 Tablets,19.90,ACTIVE
+VV-VITA-266,Moringa Oleifera Tablets Organic,180 Tablets,15.92,ACTIVE
 VV-VITA-274,Cysti-Aid Capsules,120 Capsules,22.90,ACTIVE
 VV-VITA-276,Venaflux Complex Capsules,120 Capsules,24.90,ACTIVE
 VV-VITA-277,Vitamin B12 Junior Spray,25 ml,12.90,ACTIVE
@@ -148,7 +148,7 @@ VV-VITA-343,Clorophyll Drops,60 ml,19.90,ARCHIVED
 VV-VITA-344,Ashwagandha KSM-66 Extract Capsules Organic,180 Capsules,24.90,ACTIVE
 VV-VITA-345,Serenity Complex Capsules,90 Capsules,24.90,ACTIVE
 VV-VITA-346,Chromium Plus Capsules,90 Capsules,13.90,ACTIVE
-VV-VITA-347,B-Active Complex Capsules,90 Capsules,11.90,ACTIVE
+VV-VITA-347,B-Active Complex Capsules,90 Capsules,11.90,ARCHIVED
 VV-VITA-348,Vegan Pregnancy Complex Capsules,Default Title,22.90,ARCHIVED
 VV-VITA-349,Fenugreek Capsules Organic,120 Capsules,16.90,ACTIVE
 VV-VITA-350,FenoLact Complex Capsules,90 Capsules,17.90,ARCHIVED
@@ -157,7 +157,7 @@ VV-VITA-352,Omega 3 + ADEK Oil Capsules,60 Capsules,22.90,ACTIVE
 VV-VITA-354,Mushroom Complex Capsules Organic,90 Capsules,21.90,ACTIVE
 VV-VITA-355,L-Glutathione Complex Capsules,90 Capsules,22.90,ACTIVE
 VV-VITA-356,Black Maca Plus Capsules,120 Capsules,17.90,ACTIVE
-VV-VITA-357,Taurine Plus Capsules,90 Capsules,18.90,ACTIVE
+VV-VITA-357,Taurine Plus Capsules,90 Capsules,18.90,ARCHIVED
 VV-VITA-358,OPC Trio Capsules,120 Capsules,18.90,ARCHIVED
 VV-VITA-359,Red Yeast Rice Plus Capsules,120 Capsules,18.90,ACTIVE
 VV-VITA-360,Caffeine Capsules,120 Capsules,13.90,ACTIVE
@@ -169,33 +169,33 @@ VV-VITA-365,Apple Cider Vinegar Gummies,90 Gummies,14.90,ACTIVE
 VV-VITA-366,Iron Gummies,90 Gummies,14.90,ACTIVE
 VV-VITA-367,Creatine Monohydrate Powder,500 g,17.90,ACTIVE
 VV-VITA-368,L-Glutamine Powder,500 g,17.90,ACTIVE
-VV-VITA-369,Glucomannan Capsules Organic,90 Capsules,17.90,ACTIVE
+VV-VITA-369,Glucomannan Capsules Organic,90 Capsules,8.95,ACTIVE
 VV-VITA-370,Magnesium Bisglycinate Capsules,180 Capsules,17.90,ACTIVE
 VV-VITA-371,Nattokinase Capsules,180 Capsules,15.90,ACTIVE
 VV-VITA-372,Vitamin D3 + K2 Depot Tablets,90 Tablets,18.90,ACTIVE
 VV-VITA-373,Keto Power Complex Capsules,60 Capsules,14.90,ARCHIVED
 VV-VITA-374,Psyllium Husks Organic,400 g,19.90,ACTIVE
-VV-VITA-375,Strong Bones Complex Tablets,180 Tablets,16.90,ACTIVE
+VV-VITA-375,Strong Bones Complex Tablets,180 Tablets,13.52,ACTIVE
 VV-VITA-376,Griffonia Extract (5-HTP) Capsules,90 Capsules,15.90,ACTIVE
 VV-VITA-377,Choline Bitartrate Capsules,120 Capsules,15.90,ACTIVE
 VV-VITA-378,Brewer's Yeast Capsules,120 Capsules,12.90,ACTIVE
 VV-VITA-379,Glucosamine Plus Capsules,120 Capsules,17.90,ACTIVE
 VV-VITA-38,Vitamin B Plus Tablets,180 Tablets,18.90,ACTIVE
-VV-VITA-380,Party Hero Complex Tablets,60 Tablets,13.90,ACTIVE
+VV-VITA-380,Party Hero Complex Tablets,60 Tablets,11.12,ACTIVE
 VV-VITA-381,Myo-Inositol Powder,200 g,15.90,ACTIVE
 VV-VITA-382,Taurine Powder,1 kg,18.90,ACTIVE
-VV-VITA-383,Vitamin K2 Tablets,180 Tablets,17.90,ACTIVE
+VV-VITA-383,Vitamin K2 Tablets,180 Tablets,14.32,ACTIVE
 VV-VITA-384,Beta Alanine Powder,500 g,13.90,ACTIVE
 VV-VITA-385,Evening Primrose Oil Capsules,120 Capsules,16.90,ACTIVE
-VV-VITA-386,Femme Biotics Capsules,60 Capsules,21.90,ACTIVE
-VV-VITA-387,Youth Biotics Capsules,60 Capsules,25.90,ACTIVE
+VV-VITA-386,Femme Biotics Capsules,60 Capsules,17.52,ACTIVE
+VV-VITA-387,Youth Biotics Capsules,60 Capsules,20.72,ACTIVE
 VV-VITA-388,Glycine Powder,300 g,10.90,ACTIVE
 VV-VITA-389,Prosta-X Complex Capsules,180 Capsules,23.90,ACTIVE
 VV-VITA-39,D-Mannose Complex Capsules,120 Capsules,22.90,ACTIVE
 VV-VITA-390,L-Citrulline Malate Powder,500 g,19.90,ACTIVE
 VV-VITA-391,Quercetin Complex Capsules,120 Capsules,19.90,ACTIVE
 VV-VITA-392,GABA Capsules,90 Capsules,15.90,ACTIVE
-VV-VITA-393,BCAA Powder Mango,450 g,20.90,ACTIVE
+VV-VITA-393,BCAA Powder Mango,450 g,16.72,ACTIVE
 VV-VITA-394,EAA Powder Peach,400 g,20.90,ACTIVE
 VV-VITA-395,Zinc Bisglycinate Capsules,300 Capsules,19.90,ACTIVE
 VV-VITA-398,Multivitamin Junior Gummies,60 Gummies,13.90,ACTIVE
@@ -208,7 +208,7 @@ VV-VITA-404,Sage Extract Capsules,120 Capsules,18.90,ACTIVE
 VV-VITA-405,Vitamin B12 Tablets,180 Tablets,15.90,ACTIVE
 VV-VITA-406,Vitamin B12 Tablets non DE,180 Tablets,0.00,DRAFT
 VV-VITA-407,Green Supreme Complex Powder,270 g,27.90,ACTIVE
-VV-VITA-408,Gut Routine Powder,300 g,24.90,ACTIVE
+VV-VITA-408,Gut Routine Powder,300 g,12.45,ACTIVE
 VV-VITA-409,Magnesium Citrate Capsules,180 Capsules,18.90,ACTIVE
 VV-VITA-410,OPC Capsules,240 Capsules,25.90,ACTIVE
 VV-VITA-411,Digestive Enzymes Pro Capsules,120 Capsules,22.90,ACTIVE
@@ -216,18 +216,18 @@ VV-VITA-412,Lactase Tablets,180 Tablets,19.90,ACTIVE
 VV-VITA-413,Q10 Capsules,120 Capsules,27.90,ACTIVE
 VV-VITA-414,Hericium Capsules,180 Capsules,26.90,ACTIVE
 VV-VITA-415,PMS Capsules,120 Capsules,24.90,ACTIVE
-VV-VITA-416,Calcium Capsules,180 Capsules,0.00,DRAFT
+VV-VITA-416,Calcium Capsules,180 Capsules,17.90,ACTIVE
 VV-VITA-417,Omega 3 Gummies,60 Gummies,24.90,ACTIVE
-VV-VITA-418,Folate Tablets,240 Tablets,0.00,DRAFT
-VV-VITA-419,L-Lysin Capsules,240 Capsules,0.00,DRAFT
+VV-VITA-418,Folate Tablets,240 Tablets,18.90,ACTIVE
+VV-VITA-419,L-Lysin Capsules,240 Capsules,18.90,DRAFT
 VV-VITA-420,Shilajit Complex Capsules,90 Capsules,0.00,DRAFT
 VV-VITA-421,Shilajit Resin,30 g,0.00,DRAFT
-VV-VITA-422,Protein Chocolate Powder,600 g,0.00,DRAFT
-VV-VITA-423,Protein Vanilla Powder,600 g,0.00,DRAFT
-VV-VITA-424,Vitamin B6 Tablets,365 Tablets,0.00,DRAFT
-VV-VITA-425,Pre-Workout Powder,350 g,0.00,DRAFT
-VV-VITA-426,Hydration Powder,390 g,0.00,DRAFT
-VV-VITA-427,Creatine Gummies,90 Gummies,0.00,DRAFT
+VV-VITA-422,Protein Chocolate Powder,600 g,24.90,ACTIVE
+VV-VITA-423,Protein Vanilla Powder,600 g,24.90,ACTIVE
+VV-VITA-424,Vitamin B6 Tablets,365 Tablets,20.90,ACTIVE
+VV-VITA-425,Pre-Workout Powder,350 g,25.90,DRAFT
+VV-VITA-426,Hydration Powder,390 g,26.90,DRAFT
+VV-VITA-427,Creatine Gummies,90 Gummies,18.90,ACTIVE
 VV-VITA-46,Multivitamin Plus Capsules,120 Capsules,19.90,ACTIVE
 VV-VITA-49,Iron Bisglycinate Capsules,120 Capsules,18.90,ACTIVE
 VV-VITA-50,Colla-Veg Complex Capsules,120 Capsules,19.90,ACTIVE
@@ -245,3 +245,6 @@ Vitality_Set_3,Fountain of Youth Set,Default Title,62.73,ACTIVE
 femtastic_set,Femtastic Set,Default Title,58.23,UNLISTED
 kind-T01-V001,test titel vom produkt,100 stück,0.00,DRAFT
 xxxxx-variant-test,xxxx TEST,50 Capsules,22.90,DRAFT
+VV-VITA-106-kopie,Black Garlic Extract Capsules (Kopie),120 Capsules,22.90,DRAFT
+mrc_123456789-0,My product,Default Title,0.00,DRAFT
+VV-VITA-109-copy,Liver Active Complex Capsules (Kopie),90 Capsules,18.90,DRAFT

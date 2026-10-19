@@ -16,6 +16,7 @@ TU-QNYD-JRRX,2025-12-29,2026-01-22,25,267.31,3284.33,Physical,Tribulus Terrestri
 VV-VITA-155,2026-04-23,2026-06-16,55,191.33,3224.79,Physical,Reishi Extract Capsules Organic
 VV-VITA-356,2026-04-18,2026-07-26,100,207.69,3208.92,Physical,Black Maca Plus Capsules
 VV-VITA-329,2026-01-30,2026-05-03,94,175.72,3168.36,Physical,Liposomal Vitamin C Capsules
+VV-VITA-364,2026-08-04,2026-09-30,58,216.19,3147.95,Physical,Astaxanthin Oil Capsules Organic
 VV-VITA-224,2026-06-08,2026-07-15,38,183.96,3094.62,Physical,Vegan Essentials Complex Capsules
 VV-VITA-390,2025-12-19,2026-05-28,161,153.50,2975.40,Physical,L-Citrulline Malate Powder
 VV-VITA-222,2025-11-23,2026-02-15,85,137.46,2932.90,Physical,Black Cumin Seed Oil Capsules Organic
@@ -40,6 +41,8 @@ VV-VITA-86,2025-12-03,2026-02-25,85,107.19,2034.74,Physical,MSM Capsules
 VV-VITA-46,2025-12-23,2026-02-12,52,119.98,2030.25,Physical,Multivitamin Plus Capsules
 VV-VITA-173,2026-04-10,2026-06-03,55,124.50,1962.51,Physical,Lion's Mane Capsules Organic
 VV-VITA-50,2026-04-17,2026-06-18,63,112.62,1951.47,Physical,Colla-Veg Complex Capsules
+VV-VITA-222,2026-07-27,2026-09-30,66,101.67,1944.90,Physical,Black Cumin Seed Oil Capsules Organic
+VV-VITA-142,2026-07-03,2026-09-03,63,96.16,1943.91,Physical,Prostaid Complex Capsules
 VV-VITA-122,2026-02-16,2026-06-03,108,90.85,1825.89,Physical,Immu Pro Complex Capsules
 VV-VITA-287,2025-12-27,2026-02-26,62,101.18,1813.55,Physical,Natural Silicium Capsules Organic
 VV-VITA-286,2026-03-25,2026-06-08,76,96.24,1809.35,Physical,Saw palmetto + Pygeum africanum Extracts Capsules
@@ -48,15 +51,15 @@ VV-VITA-297,2026-05-18,2026-07-15,59,108.75,1789.56,Physical,Beta Carotene Plus 
 VV-VITA-172,2025-11-19,2025-12-15,27,117.65,1764.05,Physical,Maitake Capsules Organic
 VV-VITA-38,2026-03-21,2026-05-31,72,127.11,1755.14,Physical,Vitamin B Plus Tablets
 VV-VITA-310,2026-04-09,2026-05-28,50,87.16,1752.76,Physical,Bergamot Extract Capsules
-VV-VITA-357,2026-05-01,2026-07-26,87,99.35,1750.85,Physical,Taurine Plus Capsules
 VV-VITA-107,2026-03-19,2026-04-27,40,124.02,1737.00,Physical,Ceylon Cinnamon Extract Capsules
 VV-VITA-106,2026-01-16,2026-02-08,24,93.63,1677.60,Physical,Black Garlic Extract Capsules
 VV-VITA-124,2026-04-12,2026-05-17,36,84.67,1652.90,Physical,Natural Vitamin C Organic Capsules
 VV-VITA-86,2026-05-05,2026-07-15,72,97.81,1643.74,Physical,MSM Capsules
 VV-VITA-301,2026-03-26,2026-05-17,53,100.36,1632.23,Physical,ZMA Capsules: Zinc + Magnesium + Vitamin B6
+VV-VITA-215,2026-07-27,2026-10-18,84,91.76,1609.99,Physical,Horsetail Extract Capsules Organic
 VV-VITA-311,2026-06-14,2026-07-18,35,90.49,1547.14,Physical,NAC Capsules
 VV-VITA-262,2026-01-22,2026-05-25,124,104.24,1541.69,Physical,Bilberry & Pine Bark Extracts Capsules Organic
-VV-VITA-197,2026-07-14,2026-07-26,13,87.47,1488.33,Demand gap,Guggul Extract Capsules
+VV-VITA-197,2026-07-14,2026-07-26,13,89.80,1527.99,Demand gap,Guggul Extract Capsules
 VV-VITA-183,2025-12-21,2026-02-18,60,61.81,1417.03,Physical,Reflu-X Complex Capsules
 VV-VITA-381,2025-10-27,2026-01-06,72,101.72,1394.85,Physical,Myo-Inositol Powder
 VV-VITA-127,2026-02-10,2026-03-18,37,67.98,1383.71,Physical,Saffron Extract Capsules
@@ -71,6 +74,7 @@ VV-VITA-159,2026-06-30,2026-07-18,19,61.66,1141.47,Physical,EAA Tablets
 VV-VITA-146,2026-04-14,2026-06-08,56,74.63,1138.34,Physical,Spirulina Tablets Organic
 VV-VITA-183,2026-04-13,2026-05-12,30,48.41,1116.33,Physical,Reflu-X Complex Capsules
 VV-VITA-256,2026-02-09,2026-03-09,29,52.76,1081.70,Physical,Pumpkin Seed Oil Capsules Organic
+VV-VITA-109,2026-07-27,2026-09-24,60,63.72,1070.60,Physical,Liver Active Complex Capsules
 VV-VITA-208,2026-06-25,2026-07-18,24,66.22,1046.01,Physical,Horse Chestnut Capsules Organic
 VV-VITA-230,2026-01-27,2026-02-26,31,51.40,1042.87,Physical,Berberine Plus Capsules
 VV-VITA-317,2026-03-16,2026-05-10,56,57.79,1035.49,Physical,Citrulline Plus Capsules
@@ -79,14 +83,17 @@ VV-VITA-102,2025-11-07,2026-01-11,66,63.15,984.44,Physical,Ginkgo Biloba Extract
 VV-VITA-142,2026-03-04,2026-03-29,26,46.30,978.52,Physical,Prostaid Complex Capsules
 VV-VITA-49,2026-07-06,2026-07-26,21,57.35,952.81,Physical,Iron Bisglycinate Capsules
 VV-VITA-339,2026-05-12,2026-06-14,34,54.14,952.58,Physical,L-Tyrosine Plus Capsules
+VV-VITA-262,2026-07-27,2026-09-30,66,47.77,890.61,Physical,Bilberry & Pine Bark Extracts Capsules Organic
 VV-VITA-366,2026-04-21,2026-06-17,58,65.68,890.16,Physical,Iron Gummies
 VV-VITA-231,2025-10-28,2025-11-10,14,34.59,878.06,Physical,Myo-Inositol Complex Capsules
 VV-VITA-382,2025-12-01,2026-03-03,93,51.57,862.90,Physical,Taurine Powder
 VV-VITA-391,2026-02-13,2026-03-29,45,41.73,845.51,Physical,Quercetin Complex Capsules
 VV-VITA-339,2026-06-26,2026-07-26,31,47.20,837.08,Physical,L-Tyrosine Plus Capsules
+VV-VITA-264,2026-07-27,2026-09-14,50,37.29,826.89,Physical,Mugwort Extract Capsules
 VV-VITA-298,2026-04-13,2026-05-17,35,44.37,815.27,Physical,Black Maca + Tribulus Capsules
 VV-VITA-158,2026-05-16,2026-05-31,16,34.11,812.41,Physical,Glucosamine Complex Capsules
 VV-VITA-237,2026-03-26,2026-04-19,25,49.87,808.18,Physical,Choline Trio Capsules
+VV-VITA-02,2026-07-27,2026-09-23,59,45.40,784.12,Physical,Milk Thistle Extract Capsules
 VV-VITA-355,2026-06-26,2026-07-05,10,41.95,783.20,Physical,L-Glutathione Complex Capsules
 CP-DQMG-RVN9,2026-03-23,2026-04-26,35,41.38,779.32,Physical,Wild Yams + Zinc Capsules
 VV-VITA-142,2025-10-30,2025-11-20,22,36.57,759.84,Physical,Prostaid Complex Capsules
@@ -97,9 +104,10 @@ VV-VITA-310,2026-06-17,2026-07-05,19,39.87,749.68,Physical,Bergamot Extract Caps
 VV-VITA-230,2025-10-15,2025-11-04,21,35.24,735.50,Physical,Berberine Plus Capsules
 VV-VITA-197,2026-05-20,2026-05-24,5,41.20,728.26,Demand gap,Guggul Extract Capsules
 VV-VITA-351,2026-06-04,2026-07-15,42,41.50,723.46,Physical,Cordyceps Sinensis Extract Capsules Organic
+VV-VITA-349,2026-08-14,2026-09-30,48,44.48,720.03,Physical,Fenugreek Capsules Organic
 VV-VITA-106,2026-01-05,2026-01-11,7,39.34,693.46,Demand gap,Black Garlic Extract Capsules
 VV-VITA-231,2025-10-01,2025-10-16,16,27.49,689.46,Physical,Myo-Inositol Complex Capsules
-VV-VITA-142,2026-07-03,2026-07-26,24,33.92,678.51,Physical,Prostaid Complex Capsules
+VV-VITA-338,2026-07-27,2026-09-30,66,36.96,681.41,Physical,Turmeric Capsules Organic
 VV-VITA-174,2026-04-13,2026-05-25,43,39.18,664.52,Physical,Olive Leaf Extract Capsules
 VV-VITA-320,2026-05-29,2026-06-03,6,34.29,659.47,Critically low,Vollagen + Hyaluronic Acid Complex Capsules
 VV-VITA-372,2026-01-16,2026-02-15,31,39.56,656.20,Physical,Vitamin D3 + K2 Depot Tablets
@@ -107,6 +115,9 @@ VV-VITA-386,2026-01-16,2026-03-15,59,32.81,644.24,Physical,Femme Biotics Capsule
 VV-VITA-311,2026-01-15,2026-02-01,18,36.79,628.84,Physical,NAC Capsules
 VV-VITA-311,2025-10-26,2025-11-19,25,34.34,623.46,Physical,NAC Capsules
 VV-VITA-366,2025-10-27,2025-12-01,36,49.46,612.72,Physical,Iron Gummies
+VV-VITA-390,2026-07-27,2026-09-30,66,30.81,605.72,Physical,L-Citrulline Malate Powder
+VV-VITA-207,2026-08-13,2026-09-30,49,33.54,604.34,Physical,Astragalus Extract Capsules Organic
+VV-VITA-106,2026-09-09,2026-10-15,37,29.91,604.13,Physical,Black Garlic Extract Capsules
 VV-VITA-127,2025-10-29,2025-11-12,15,28.00,597.71,Physical,Saffron Extract Capsules
 VV-VITA-355,2026-02-10,2026-03-01,20,27.57,597.03,Physical,L-Glutathione Complex Capsules
 VV-VITA-248,2025-09-29,2025-11-05,38,26.36,577.60,Physical,Oregano Oil Capsules Organic
@@ -114,6 +125,7 @@ VV-VITA-46,2026-06-26,2026-07-05,10,37.93,574.79,Physical,Multivitamin Plus Caps
 VV-VITA-250,2026-01-29,2026-03-10,41,32.98,569.01,Physical,Brahmi Tablets Organic
 VV-VITA-93,2025-11-22,2025-12-15,24,40.66,567.51,Physical,Vitamin B12 Spray
 VV-VITA-364,2025-11-07,2025-11-16,10,26.73,557.88,Physical,Astaxanthin Oil Capsules Organic
+VV-VITA-356,2026-10-01,2026-10-18,18,34.71,550.22,Physical,Black Maca Plus Capsules
 VV-VITA-94,2026-06-26,2026-07-05,10,24.53,546.73,Physical,Pro Bio Capsules Organic
 VV-VITA-151,2026-01-24,2026-02-15,23,25.84,546.46,Physical,Female Balance Complex Capsules
 VV-VITA-57-V,2026-03-26,2026-04-12,18,15.92,538.39,Physical,Hyaluronic Acid Capsules
@@ -124,14 +136,22 @@ VV-VITA-203,2026-06-26,2026-07-05,10,31.10,506.25,Physical,GABA Plus Capsules
 VV-VITA-204,2026-01-15,2026-02-22,39,32.22,497.53,Physical,Devil's Claw Plus Capsules
 VV-VITA-199,2026-04-18,2026-05-20,33,26.80,488.15,Physical,St. John's Wort + Passion Flower Capsules Organic
 VV-VITA-256,2025-10-14,2025-11-19,37,22.45,487.62,Physical,Pumpkin Seed Oil Capsules Organic
+VV-VITA-237,2026-10-01,2026-10-15,15,28.02,486.79,Physical,Choline Trio Capsules
+VV-VITA-256,2026-07-27,2026-08-24,29,23.61,477.64,Physical,Pumpkin Seed Oil Capsules Organic
 TU-QNYD-JRRX,2025-12-24,2025-12-27,4,38.80,475.10,Demand gap,Tribulus Terrestris Extract Capsules
 VV-VITA-264,2026-02-19,2026-03-09,19,20.28,471.84,Physical,Mugwort Extract Capsules
 VV-VITA-119,2026-02-04,2026-03-11,36,27.86,469.79,Physical,Magnesium + Potassium Capsules
 VV-VITA-407,2026-04-21,2026-05-06,16,21.82,469.52,Physical,Green Supreme Complex Powder
+VV-VITA-171,2026-08-27,2026-09-30,35,18.99,463.08,Physical,Vision Care Complex Capsules
+VV-VITA-107,2026-07-27,2026-08-13,18,35.23,453.85,Physical,Ceylon Cinnamon Extract Capsules
+VV-VITA-367,2026-10-08,2026-10-15,8,26.83,435.85,Physical,Creatine Monohydrate Powder
 VV-VITA-121,2026-04-14,2026-04-28,15,22.97,427.42,Physical,Female Harmony Complex Capsules
 VV-VITA-313,2026-03-21,2026-04-13,24,24.54,418.64,Physical,Boswellia Extract Capsules
 VV-VITA-252,2026-04-01,2026-04-23,23,21.56,418.01,Physical,Shiitake Extract Capsules
+VV-VITA-216,2026-07-27,2026-08-26,31,21.73,417.42,Physical,Kudzu Plus Capsules
 CP-DQMG-RVN9,2026-02-26,2026-03-18,21,21.88,414.53,Physical,Wild Yams + Zinc Capsules
+VV-VITA-382,2026-08-07,2026-09-30,55,24.22,412.41,Physical,Taurine Powder
+VV-VITA-367,2026-08-30,2026-09-30,32,24.46,411.53,Physical,Creatine Monohydrate Powder
 VV-VITA-111,2026-01-17,2026-02-04,19,23.66,409.42,Physical,Colon Care Complex Capsules
 VV-VITA-295,2026-03-14,2026-04-21,39,19.52,407.33,Physical,Sugar Balance Complex Capsules
 CW-KVIN-V39Y,2026-07-07,2026-07-23,17,20.33,404.56,Physical,D-Mannose Powder
@@ -139,10 +159,14 @@ VV-VITA-50,2026-06-26,2026-07-05,10,24.37,400.70,Physical,Colla-Veg Complex Caps
 TU-QNYD-JRRX,2026-05-31,2026-06-08,9,31.82,398.50,Physical,Tribulus Terrestris Extract Capsules
 VV-VITA-203,2026-01-30,2026-02-08,10,23.24,398.16,Physical,GABA Plus Capsules
 VV-VITA-202,2025-10-31,2025-12-08,39,25.00,389.77,Physical,Multivitamin Junior Spray
+VV-VITA-265,2026-09-22,2026-10-18,27,19.40,376.37,Physical,Ginkgo + Ginseng Extract Capsules
 VV-VITA-215,2026-04-03,2026-04-18,16,22.72,373.38,Physical,Horsetail Extract Capsules Organic
+VV-VITA-385,2026-09-09,2026-10-18,40,22.14,363.33,Physical,Evening Primrose Oil Capsules
 VV-VITA-329,2025-11-09,2025-11-20,12,20.93,363.02,Physical,Liposomal Vitamin C Capsules
+VV-VITA-168,2026-10-01,2026-10-15,15,17.61,361.81,Physical,Sun Care Complex Capsules
 VV-VITA-395,2026-02-05,2026-02-26,22,19.71,351.66,Physical,Zinc Bisglycinate Capsules
 VV-VITA-320,2026-06-26,2026-06-28,3,18.51,346.65,Physical,Vollagen + Hyaluronic Acid Complex Capsules
+VV-VITA-172,2026-07-27,2026-08-06,11,21.76,346.04,Physical,Maitake Capsules Organic
 VV-VITA-403,2026-07-07,2026-07-17,11,20.77,341.41,Physical,Magnesium Citrate Powder
 VV-VITA-224,2025-11-28,2025-12-08,11,17.57,321.55,Physical,Vegan Essentials Complex Capsules
 VV-VITA-155,2026-06-23,2026-06-28,6,18.37,318.80,Physical,Reishi Extract Capsules Organic
@@ -151,12 +175,17 @@ VV-VITA-417,2026-06-26,2026-06-30,5,14.22,299.24,Physical,Omega 3 Gummies
 VV-VITA-257,2025-11-22,2025-12-10,19,12.24,292.93,Physical,Lecithin Oil Capsules Organic
 VV-VITA-345,2026-02-10,2026-02-25,16,14.47,290.95,Physical,Serenity Complex Capsules
 VV-VITA-371,2026-03-10,2026-03-30,21,22.74,290.08,Physical,Nattokinase Capsules
+VV-VITA-287,2026-08-29,2026-09-30,33,15.97,287.96,Physical,Natural Silicium Capsules Organic
 TU-QNYD-JRRX,2026-05-20,2026-05-23,4,23.08,284.20,Demand gap,Tribulus Terrestris Extract Capsules
+VV-VITA-93,2026-10-01,2026-10-15,15,17.23,283.60,Physical,Vitamin B12 Spray
 VV-VITA-57-V2,2026-03-30,2026-04-13,15,13.77,282.55,Physical,Hyaluronic Acid Capsules
 VV-VITA-345,2025-10-27,2025-11-17,22,12.67,282.24,Physical,Serenity Complex Capsules
 VV-VITA-287,2025-12-05,2025-12-15,11,15.55,280.08,Physical,Natural Silicium Capsules Organic
+VV-VITA-304,2026-08-27,2026-09-28,33,19.19,274.80,Physical,Folate Capsules
+VV-VITA-345,2026-07-27,2026-08-24,29,14.22,271.10,Physical,Serenity Complex Capsules
 VV-VITA-318,2026-05-04,2026-05-25,22,16.44,264.20,Physical,Garlic Plus Capsules
 TU-QNYD-JRRX,2025-12-06,2025-12-07,2,21.56,262.55,Demand gap,Tribulus Terrestris Extract Capsules
+VV-VITA-258,2026-10-01,2026-10-18,18,13.84,257.82,Physical,Flaxseed Oil Capsules Organic
 VV-VITA-345,2026-01-19,2026-02-01,14,12.70,256.15,Critically low,Serenity Complex Capsules
 VV-VITA-127,2026-01-13,2026-01-18,6,11.37,251.29,Physical,Saffron Extract Capsules
 VV-VITA-39,2026-02-13,2026-02-25,13,13.50,243.98,Physical,D-Mannose Complex Capsules
@@ -171,11 +200,14 @@ VV-VITA-190,2025-10-27,2025-11-17,22,13.44,216.50,Physical,Papaya Extract Capsul
 VV-VITA-346,2026-02-27,2026-03-18,20,19.00,215.90,Physical,Chromium Plus Capsules
 VV-VITA-338,2026-01-16,2026-01-29,14,11.93,212.48,Physical,Turmeric Capsules Organic
 VV-VITA-385,2026-03-01,2026-03-18,18,13.12,204.13,Physical,Evening Primrose Oil Capsules
+VV-VITA-88,2026-07-27,2026-08-06,11,10.04,193.91,Physical,Chlorella & Spirulina Capsules Organic
 VV-VITA-417,2026-07-03,2026-07-05,3,9.22,192.03,Demand gap,Omega 3 Gummies
 VV-VITA-158,2026-06-26,2026-06-28,3,8.21,190.90,Physical,Glucosamine Complex Capsules
 VV-VITA-345,2026-04-26,2026-05-03,8,9.40,186.78,Physical,Serenity Complex Capsules
 VV-VITA-49,2025-10-24,2025-11-06,14,11.31,184.12,Physical,Iron Bisglycinate Capsules
 VV-VITA-349,2025-12-29,2026-01-22,25,11.40,183.67,Physical,Fenugreek Capsules Organic
+VV-VITA-391,2026-07-27,2026-08-06,11,9.11,178.50,Physical,Quercetin Complex Capsules
+VV-VITA-223,2026-07-27,2026-07-28,2,9.16,171.11,Physical,Omega 3 Oil Capsules
 VV-VITA-157,2026-06-06,2026-06-14,9,14.30,170.49,Physical,Hawthorn Extract Capsules Organic
 VV-VITA-258,2026-03-20,2026-03-30,11,10.02,167.19,Physical,Flaxseed Oil Capsules Organic
 VV-VITA-172,2025-11-16,2025-11-17,2,11.05,165.75,Demand gap,Maitake Capsules Organic
@@ -184,10 +216,15 @@ VV-VITA-127,2026-01-05,2026-01-08,4,7.35,160.04,Physical,Saffron Extract Capsule
 VV-VITA-173,2026-06-26,2026-06-28,3,9.79,159.52,Physical,Lion's Mane Capsules Organic
 VV-VITA-256,2025-12-09,2025-12-15,7,7.59,159.15,Physical,Pumpkin Seed Oil Capsules Organic
 VV-VITA-407,2026-06-21,2026-06-28,8,18.64,156.13,Critically low,Green Supreme Complex Powder
+VV-VITA-336,2026-10-01,2026-10-15,15,8.24,152.45,Physical,Devil's Claw Extract Capsules Organic
+VV-VITA-183,2026-07-27,2026-08-06,11,7.20,152.24,Physical,Reflu-X Complex Capsules
+VV-VITA-107,2026-09-21,2026-09-30,10,11.21,151.96,Physical,Ceylon Cinnamon Extract Capsules
 VV-VITA-391,2026-06-26,2026-06-28,3,8.49,150.73,Physical,Quercetin Complex Capsules
 VV-VITA-171,2026-02-24,2026-03-02,7,5.93,150.28,Physical,Vision Care Complex Capsules
+VV-VITA-102,2026-08-02,2026-08-19,18,8.11,144.49,Physical,Ginkgo Biloba Extract Capsules
 VV-VITA-366,2026-06-26,2026-07-05,10,10.92,139.52,Physical,Iron Gummies
 CW-KVIN-V39Y,2026-03-30,2026-04-07,9,7.90,138.76,Physical,D-Mannose Powder
+VV-VITA-363,2026-10-01,2026-10-18,18,9.25,138.28,Physical,Apple Cider Vinegar Complex Capsules
 VV-VITA-336,2026-06-26,2026-07-05,10,7.68,136.01,Physical,Devil's Claw Extract Capsules Organic
 TU-QNYD-JRRX,2025-12-02,2025-12-02,1,10.73,130.57,Demand gap,Tribulus Terrestris Extract Capsules
 TU-QNYD-JRRX,2026-06-26,2026-06-28,3,9.79,128.34,Physical,Tribulus Terrestris Extract Capsules
@@ -199,20 +236,33 @@ VV-VITA-308,2026-06-26,2026-06-28,3,6.50,122.88,Physical,Digestive Enzymes Compl
 VV-VITA-352,2026-06-26,2026-06-28,3,6.01,119.49,Physical,Omega 3 + ADEK Oil Capsules
 TU-QNYD-JRRX,2025-12-21,2025-12-21,1,9.67,118.25,Demand gap,Tribulus Terrestris Extract Capsules
 VV-VITA-49,2026-06-29,2026-07-01,3,7.08,115.76,Suppressed sales (post-OOS),Iron Bisglycinate Capsules
+VV-VITA-102,2026-09-13,2026-09-30,18,6.24,113.92,Physical,Ginkgo Biloba Extract Capsules
 VV-VITA-378,2026-01-30,2026-02-12,14,8.75,111.25,Critically low,Brewer's Yeast Capsules
+VV-VITA-57-V2,2026-09-19,2026-09-30,12,5.00,110.13,Physical,Hyaluronic Acid Capsules
 VV-VITA-286,2026-06-26,2026-06-28,3,5.85,109.65,Physical,Saw palmetto + Pygeum africanum Extracts Capsules
+VV-VITA-367,2026-10-17,2026-10-18,2,6.67,108.08,Physical,Creatine Monohydrate Powder
 VV-VITA-142,2026-02-26,2026-03-02,5,5.11,107.56,Physical,Prostaid Complex Capsules
 TU-QNYD-JRRX,2026-05-28,2026-05-29,2,8.76,107.21,Demand gap,Tribulus Terrestris Extract Capsules
+VV-VITA-352,2026-09-09,2026-09-13,5,5.06,105.85,Physical,Omega 3 + ADEK Oil Capsules
+VV-VITA-39,2026-09-26,2026-09-30,5,5.74,104.24,Physical,D-Mannose Complex Capsules
+VV-VITA-359,2026-10-08,2026-10-15,8,5.73,100.20,Critically low,Red Yeast Rice Plus Capsules
 VV-VITA-168,2026-06-26,2026-06-28,3,5.26,99.67,Physical,Sun Care Complex Capsules
+VV-VITA-31,2026-07-22,2026-07-26,5,5.71,99.39,Physical,Papaya Enzyme Capsules
+VV-VITA-377,2026-10-11,2026-10-15,5,6.60,97.97,Critically low,Choline Bitartrate Capsules
 VV-VITA-122,2026-06-26,2026-06-28,3,5.62,97.25,Physical,Immu Pro Complex Capsules
 VV-VITA-107,2026-02-24,2026-02-25,2,6.23,94.68,Physical,Ceylon Cinnamon Extract Capsules
-VV-VITA-31,2026-07-22,2026-07-26,5,5.40,93.86,Physical,Papaya Enzyme Capsules
 VV-VITA-313,2026-07-15,2026-07-18,4,5.76,92.96,Critically low,Boswellia Extract Capsules
+VV-VITA-57-V2,2026-10-08,2026-10-15,8,4.27,92.19,Critically low,Hyaluronic Acid Capsules
+VV-VITA-88,2026-09-22,2026-09-30,9,4.21,91.49,Physical,Chlorella & Spirulina Capsules Organic
 VV-VITA-364,2026-03-19,2026-03-19,1,4.83,90.90,Demand gap,Astaxanthin Oil Capsules Organic
+VV-VITA-237,2026-10-17,2026-10-18,2,5.29,90.88,Physical,Choline Trio Capsules
 VV-VITA-372,2026-01-09,2026-01-12,4,5.56,90.49,Physical,Vitamin D3 + K2 Depot Tablets
 VV-VITA-313,2026-02-01,2026-02-08,8,5.13,89.54,Physical,Boswellia Extract Capsules
 VV-VITA-119,2026-01-27,2026-02-01,6,5.29,89.45,Physical,Magnesium + Potassium Capsules
 VV-VITA-304,2026-06-26,2026-06-28,3,6.53,87.76,Physical,Folate Capsules
+VV-VITA-256,2026-09-26,2026-09-30,5,4.15,87.41,Physical,Pumpkin Seed Oil Capsules Organic
+VV-VITA-391,2026-09-25,2026-09-30,6,4.02,84.39,Physical,Quercetin Complex Capsules
+VV-VITA-257,2026-07-27,2026-07-30,4,4.06,82.92,Physical,Lecithin Oil Capsules Organic
 VV-VITA-173,2026-02-08,2026-02-12,5,5.10,82.87,Physical,Lion's Mane Capsules Organic
 VV-VITA-216,2026-06-26,2026-06-28,3,4.61,82.69,Physical,Kudzu Plus Capsules
 VV-VITA-230,2026-03-16,2026-03-18,3,3.87,80.01,Critically low,Berberine Plus Capsules
@@ -223,6 +273,7 @@ VV-VITA-345,2026-06-26,2026-06-28,3,3.90,74.31,Physical,Serenity Complex Capsule
 VV-VITA-46,2026-02-23,2026-02-23,1,4.12,73.64,Demand gap,Multivitamin Plus Capsules
 VV-VITA-173,2026-01-30,2026-02-02,4,4.49,73.24,Physical,Lion's Mane Capsules Organic
 VV-VITA-46,2026-02-20,2026-02-20,1,4.00,70.93,Demand gap,Multivitamin Plus Capsules
+VV-VITA-258,2026-09-09,2026-09-13,5,3.90,70.41,Physical,Flaxseed Oil Capsules Organic
 VV-VITA-276,2025-10-09,2025-10-12,4,3.12,69.95,Physical,Venaflux Complex Capsules
 VV-VITA-159,2026-06-13,2026-06-14,2,3.76,69.08,Physical,EAA Tablets
 VV-VITA-215,2026-01-05,2026-01-08,4,4.15,68.22,Physical,Horsetail Extract Capsules Organic
@@ -233,29 +284,41 @@ VV-VITA-146,2026-06-26,2026-06-28,3,4.04,60.86,Physical,Spirulina Tablets Organi
 VV-VITA-417,2026-07-19,2026-07-19,1,3.04,60.86,Demand gap,Omega 3 Gummies
 VV-VITA-379,2026-06-26,2026-06-28,3,4.20,60.50,Physical,Glucosamine Plus Capsules
 VV-VITA-276,2025-10-05,2025-10-06,2,2.62,58.76,Physical,Venaflux Complex Capsules
-VV-VITA-168,2026-07-25,2026-07-26,2,2.81,54.44,Critically low,Sun Care Complex Capsules
+VV-VITA-168,2026-07-25,2026-07-26,2,3.02,58.63,Critically low,Sun Care Complex Capsules
+VV-VITA-168,2026-10-17,2026-10-18,2,2.43,55.18,Physical,Sun Care Complex Capsules
 VV-VITA-155,2026-04-21,2026-04-21,1,3.07,52.70,Demand gap,Reishi Extract Capsules Organic
 VV-VITA-379,2025-11-09,2025-11-13,5,3.13,51.51,Physical,Glucosamine Plus Capsules
 VV-VITA-286,2026-03-15,2026-03-18,4,2.63,50.58,Critically low,Saw palmetto + Pygeum africanum Extracts Capsules
 VV-VITA-203,2026-06-24,2026-06-24,1,3.05,50.14,Demand gap,GABA Plus Capsules
 VV-VITA-413,2026-06-26,2026-06-28,3,1.87,47.47,Physical,Q10 Capsules
-VV-VITA-344,2026-07-25,2026-07-26,2,2.28,46.30,Critically low,Ashwagandha KSM-66 Extract Capsules Organic
+VV-VITA-344,2026-07-25,2026-07-26,2,2.30,46.83,Critically low,Ashwagandha KSM-66 Extract Capsules Organic
 VV-VITA-372,2026-06-26,2026-06-28,3,2.67,44.73,Physical,Vitamin D3 + K2 Depot Tablets
+VV-VITA-94,2026-10-02,2026-10-02,1,3.30,44.35,Demand gap,Pro Bio Capsules Organic
+VV-VITA-94,2026-10-04,2026-10-04,1,3.28,44.25,Demand gap,Pro Bio Capsules Organic
 VV-VITA-129,2026-01-15,2026-01-18,4,2.40,43.08,Physical,Ginger Organic Capsules
 VV-VITA-256,2025-11-21,2025-11-23,3,1.89,40.85,Physical,Pumpkin Seed Oil Capsules Organic
 VV-VITA-250,2026-01-16,2026-01-18,3,2.42,40.27,Physical,Brahmi Tablets Organic
 VV-VITA-252,2026-06-26,2026-06-28,3,2.05,39.58,Physical,Shiitake Extract Capsules
+VV-VITA-377,2026-10-17,2026-10-18,2,2.64,39.09,Critically low,Choline Bitartrate Capsules
 VV-VITA-311,2026-01-11,2026-01-12,2,2.21,38.08,Physical,NAC Capsules
+VV-VITA-93,2026-10-17,2026-10-18,2,2.31,37.67,Physical,Vitamin B12 Spray
 VV-VITA-119,2025-12-05,2025-12-08,4,2.24,37.00,Critically low,Magnesium + Potassium Capsules
 VV-VITA-395,2026-01-30,2026-02-01,3,2.01,35.73,Critically low,Zinc Bisglycinate Capsules
+VV-VITA-183,2026-09-26,2026-09-30,5,1.60,35.69,Physical,Reflu-X Complex Capsules
 TU-QNYD-JRRX,2026-07-16,2026-07-16,1,2.57,34.53,Physical,Tribulus Terrestris Extract Capsules
 VV-VITA-257,2025-12-12,2025-12-15,4,1.41,33.58,Physical,Lecithin Oil Capsules Organic
+VV-VITA-106,2026-10-17,2026-10-18,2,1.57,31.93,Physical,Black Garlic Extract Capsules
 VV-VITA-303,2026-07-24,2026-07-26,3,1.78,30.99,Physical,Drenaflux Complex Capsules
 VV-VITA-307,2026-03-16,2026-03-18,3,1.80,25.56,Physical,Vitamin B3 Capsules
+VV-VITA-386,2026-07-27,2026-07-28,2,1.21,25.54,Physical,Femme Biotics Capsules
 VV-VITA-304,2025-11-24,2025-11-27,4,1.84,25.35,Physical,Folate Capsules
+VV-VITA-104,2026-10-17,2026-10-18,2,1.35,25.26,Physical,Echinacea Purpurea Extract Capsules
+VV-VITA-359,2026-10-17,2026-10-18,2,1.42,24.87,Critically low,Red Yeast Rice Plus Capsules
 VV-VITA-31,2026-07-16,2026-07-16,1,1.42,24.41,Physical,Papaya Enzyme Capsules
+VV-VITA-57-V2,2026-10-17,2026-10-18,2,1.12,24.14,Physical,Hyaluronic Acid Capsules
 VV-VITA-237,2026-02-16,2026-02-17,2,1.29,22.16,Physical,Choline Trio Capsules
 VV-VITA-183,2025-12-16,2025-12-18,3,0.99,21.45,Critically low,Reflu-X Complex Capsules
+VV-VITA-387,2026-07-27,2026-07-28,2,3.76,20.15,Physical,Youth Biotics Capsules
 VV-VITA-109,2026-07-16,2026-07-16,1,0.94,15.22,Physical,Liver Active Complex Capsules
 VV-VITA-199,2026-05-24,2026-05-25,2,0.79,14.70,Physical,St. John's Wort + Passion Flower Capsules Organic
 VV-VITA-202,2025-12-14,2025-12-15,2,0.66,10.10,Physical,Multivitamin Junior Spray
@@ -264,9 +327,12 @@ VV-VITA-304,2025-10-01,2025-10-01,1,0.57,8.16,Physical,Folate Capsules
 VV-VITA-276,2026-03-08,2026-03-09,2,0.34,7.45,Critically low,Venaflux Complex Capsules
 VV-VITA-341,2026-03-18,2026-03-18,1,0.07,0.99,Physical,Vitamin B12 Drops
 VV-VITA-223,2026-03-28,2026-03-29,2,0.00,0.00,Critically low,Omega 3 Oil Capsules
-VV-VITA-342,2026-03-18,2026-03-18,1,0.00,0.00,Physical,Vitamin D3 + K2 Drops
+VV-VITA-256,2026-09-15,2026-09-15,1,0.00,0.00,Critically low,Pumpkin Seed Oil Capsules Organic
 VV-VITA-343,2026-01-25,2026-01-25,1,0.00,0.00,Critically low,Clorophyll Drops
+VV-VITA-342,2026-03-18,2026-03-18,1,0.00,0.00,Physical,Vitamin D3 + K2 Drops
+VV-VITA-314,2026-09-24,2026-09-29,6,0.00,0.00,Physical,Glycine Powder
 VV-VITA-142,2026-01-29,2026-01-29,1,0.00,0.00,Physical,Prostaid Complex Capsules
+VV-VITA-368,2026-10-08,2026-10-08,1,0.00,0.00,Physical,L-Glutamine Powder
 VV-VITA-155,2026-03-11,2026-03-11,1,0.00,0.00,Physical,Reishi Extract Capsules Organic
 VV-VITA-364,2026-03-30,2026-03-30,1,0.00,0.00,Physical,Astaxanthin Oil Capsules Organic
 VV-VITA-374,2026-03-11,2026-03-11,1,0.00,0.00,Physical,Psyllium Husks Organic
