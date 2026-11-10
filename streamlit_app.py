@@ -55,10 +55,22 @@ def check_password() -> bool:
 check_password()
 
 
-@st.cache_data
-def load() -> pd.DataFrame:
-    daily = pd.read_csv(RESULTS / "sku_daily.csv", parse_dates=["day"])
-    meta = pd.read_csv(REPO / "data" / "variants.csv").set_index("sku")
+DATA_FILES = (RESULTS / "sku_daily.csv", REPO / "data" / "variants.csv")
+
+
+def data_version() -> tuple:
+    """Changes whenever a refreshed data file lands on disk.
+
+    The cache below is keyed on it; without that, a data-only push leaves the
+    running app serving the previous data until it happens to restart.
+    """
+    return tuple((p.stat().st_mtime_ns, p.stat().st_size) for p in DATA_FILES)
+
+
+@st.cache_data(max_entries=2)
+def load(version: tuple) -> pd.DataFrame:
+    daily = pd.read_csv(DATA_FILES[0], parse_dates=["day"])
+    meta = pd.read_csv(DATA_FILES[1]).set_index("sku")
     daily["expected_revenue"] = (daily["lam"].fillna(0)
                                  * daily["trail_price"].fillna(0))
     daily["is_oos"] = daily["category"].isin(OOS_CATS)
@@ -67,7 +79,7 @@ def load() -> pd.DataFrame:
     return daily
 
 
-daily = load()
+daily = load(data_version())
 MIN_D, MAX_D = daily["day"].min().date(), daily["day"].max().date()
 
 st.title("OOS lost revenue — vegavero.com")
