@@ -1,8 +1,9 @@
 """OOS Lost Revenue dashboard — Streamlit app.
 
-Reads the committed model output in results/sku_daily.csv (produced by
+Reads the committed model output per brand (results/sku_daily.csv for
+Vegavero, results/<brand>/sku_daily.csv otherwise; produced by
 scripts/oos_analytics.py) and computes every view — KPIs, charts, rankings,
-episodes — for the period selected in the slicer. No live Shopify connection
+episodes — for the selected brand and period. No live Shopify connection
 needed. Deployable on Streamlit Community Cloud with this file as entrypoint.
 """
 from pathlib import Path
@@ -19,7 +20,7 @@ CAT_COLORS = ["#2a78d6", "#eda100", "#e87ba4", "#008300"]
 ACCENT = "#2a78d6"
 OOS_CATS = set(CATS)
 
-st.set_page_config(page_title="OOS Lost Revenue — Vegavero", page_icon="📉",
+st.set_page_config(page_title="OOS Lost Revenue", page_icon="📉",
                    layout="wide")
 
 
@@ -55,22 +56,43 @@ def check_password() -> bool:
 check_password()
 
 
-DATA_FILES = (RESULTS / "sku_daily.csv", REPO / "data" / "variants.csv")
+# Vegavero keeps the original top-level folders; other brands live in
+# results/<brand>/ and data/<brand>/ (same layout as scripts/oos_analytics.py).
+BRANDS = {
+    "Vegavero": {
+        "daily": RESULTS / "sku_daily.csv",
+        "variants": REPO / "data" / "variants.csv",
+        "site": "vegavero.com",
+        "note": None,
+    },
+    "Wowtamins": {
+        "daily": RESULTS / "wowtamins" / "sku_daily.csv",
+        "variants": REPO / "data" / "wowtamins" / "variants.csv",
+        "site": "wowtamins.com",
+        "note": ("Wowtamins has no daily inventory history (order data via "
+                 "Matrixify only). Stock-outs are inferred from sales gaps: a "
+                 "day with zero units on a SKU that normally sells 3+ per "
+                 "day. Physical and Critically-low categories cannot occur, "
+                 "and a deliberately paused product looks like a stock-out."),
+    },
+}
+BRANDS = {k: v for k, v in BRANDS.items() if v["daily"].exists()}
 
 
-def data_version() -> tuple:
+def data_version(brand: str) -> tuple:
     """Changes whenever a refreshed data file lands on disk.
 
     The cache below is keyed on it; without that, a data-only push leaves the
     running app serving the previous data until it happens to restart.
     """
-    return tuple((p.stat().st_mtime_ns, p.stat().st_size) for p in DATA_FILES)
+    files = (BRANDS[brand]["daily"], BRANDS[brand]["variants"])
+    return tuple((p.stat().st_mtime_ns, p.stat().st_size) for p in files)
 
 
-@st.cache_data(max_entries=2)
-def load(version: tuple) -> pd.DataFrame:
-    daily = pd.read_csv(DATA_FILES[0], parse_dates=["day"])
-    meta = pd.read_csv(DATA_FILES[1]).set_index("sku")
+@st.cache_data(max_entries=4)
+def load(brand: str, version: tuple) -> pd.DataFrame:
+    daily = pd.read_csv(BRANDS[brand]["daily"], parse_dates=["day"])
+    meta = pd.read_csv(BRANDS[brand]["variants"]).set_index("sku")
     daily["expected_revenue"] = (daily["lam"].fillna(0)
                                  * daily["trail_price"].fillna(0))
     daily["is_oos"] = daily["category"].isin(OOS_CATS)
@@ -79,19 +101,24 @@ def load(version: tuple) -> pd.DataFrame:
     return daily
 
 
-daily = load(data_version())
+# the selector only appears once a second brand's results are in the repo
+brand = (st.radio("Brand", list(BRANDS), horizontal=True)
+         if len(BRANDS) > 1 else next(iter(BRANDS)))
+daily = load(brand, data_version(brand))
 MIN_D, MAX_D = daily["day"].min().date(), daily["day"].max().date()
 
-st.title("OOS lost revenue — vegavero.com")
+st.title(f"OOS lost revenue — {BRANDS[brand]['site']}")
 st.caption(f"Shopify store · data {MIN_D.strftime('%d.%m.%Y')} → "
            f"{MAX_D.strftime('%d.%m.%Y')} · daily model · "
            "methodology: docs/METHODOLOGY.md")
+if BRANDS[brand]["note"]:
+    st.info(BRANDS[brand]["note"])
 
 # ---- filters: period picker + granularity ------------------------------
 fc1, fc2, _ = st.columns([1, 1, 2])
 sel = fc1.date_input(
     "Period", value=(MIN_D, MAX_D), min_value=MIN_D, max_value=MAX_D,
-    format="DD.MM.YYYY")
+    format="DD.MM.YYYY", key=f"period_{brand}")  # each brand keeps its own range
 grain = fc2.radio("Granularity", ["Weekly", "Monthly"], horizontal=True)
 if len(sel) != 2:  # calendar open, end date not picked yet
     st.info("Pick an end date in the calendar.")

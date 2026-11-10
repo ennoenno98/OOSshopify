@@ -37,8 +37,20 @@ PRICE_WINDOW = 90       # trailing window for avg selling price per unit
 WARMUP_DAYS = 28        # first days of history are baseline warm-up, never scored
 
 REPO = Path(__file__).resolve().parent.parent
+# Vegavero keeps the original top-level folders; every other brand gets a
+# sub-folder (data/<brand>/, results/<brand>/). See set_brand().
+BRANDS = ("vegavero", "wowtamins")
 DATA = REPO / "data"
 RESULTS = REPO / "results"
+
+
+def set_brand(brand: str) -> None:
+    global DATA, RESULTS
+    if brand not in BRANDS:
+        raise SystemExit(f"unknown brand '{brand}', expected one of {BRANDS}")
+    sub = "" if brand == "vegavero" else brand
+    DATA = REPO / "data" / sub
+    RESULTS = REPO / "results" / sub
 
 CAT_IN_STOCK = "In stock"
 CAT_PHYSICAL = "Physical"
@@ -55,13 +67,24 @@ OOS_CATS = {CAT_PHYSICAL, CAT_CRITICAL, CAT_DEMAND_GAP, CAT_SUPPRESSED}
 
 
 def load_panel() -> tuple[pd.DataFrame, pd.DataFrame]:
-    inv = pd.read_csv(DATA / "inventory_daily.csv", parse_dates=["day"])
     sales = pd.read_csv(DATA / "sales_daily.csv", parse_dates=["day"])
     variants = pd.read_csv(DATA / "variants.csv").fillna({"sku": ""})
-    inv = inv[inv["sku"].notna() & (inv["sku"] != "")]
     sales = sales[sales["sku"].notna() & (sales["sku"] != "")]
 
-    days = pd.date_range(inv["day"].min(), inv["day"].max(), freq="D")
+    inv_path = DATA / "inventory_daily.csv"
+    if inv_path.exists():
+        inv = pd.read_csv(inv_path, parse_dates=["day"])
+        inv = inv[inv["sku"].notna() & (inv["sku"] != "")]
+        days = pd.date_range(inv["day"].min(), inv["day"].max(), freq="D")
+    else:
+        # No inventory history for this brand (order data only): stock stays
+        # unknown, so only the sales-based rules (Demand gap, Suppressed
+        # sales) can fire — Physical and Critically low never do.
+        inv = pd.DataFrame({"day": pd.Series(dtype="datetime64[ns]"),
+                            "sku": pd.Series(dtype=str),
+                            "ending_inventory_units": pd.Series(dtype=float),
+                            "inventory_units_sold": pd.Series(dtype=float)})
+        days = pd.date_range(sales["day"].min(), sales["day"].max(), freq="D")
     skus = sorted(set(inv["sku"]) | set(sales["sku"]))
     idx = pd.MultiIndex.from_product([skus, days], names=["sku", "day"])
 
@@ -216,7 +239,7 @@ def compute() -> dict:
     df["lost_revenue"] = df["lost_units"] * df["trail_price"].fillna(0)
     df["expected_revenue"] = df["lam"].fillna(0) * df["trail_price"].fillna(0)
 
-    RESULTS.mkdir(exist_ok=True)
+    RESULTS.mkdir(parents=True, exist_ok=True)
     keep = ["sku", "day", "units", "revenue", "stock", "lam", "reach",
             "trail_price", "live", "category", "lost_units", "lost_revenue"]
     df[keep].to_csv(RESULTS / "sku_daily.csv", index=False, float_format="%.4f")
@@ -313,5 +336,9 @@ def summarize(df: pd.DataFrame, episodes: pd.DataFrame, meta: pd.DataFrame) -> d
 
 
 if __name__ == "__main__":
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--brand", default="vegavero", choices=BRANDS)
+    set_brand(ap.parse_args().brand)
     s = compute()
     print(json.dumps(s, indent=2))
