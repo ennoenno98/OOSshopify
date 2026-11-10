@@ -78,8 +78,25 @@ analytics + Admin API). To refresh, ask Claude to:
    for the months since the last day in `data/*.csv` (queries are month-sized;
    pull through *yesterday* — never include the current partial day),
 2. append them to the CSVs (or re-run `consolidate_raw.py` on the new pulls),
-3. re-pull the variant list, and
-4. re-run the two scripts above.
+3. re-pull the variant list,
+4. write the `shopDomain` reported by the Shopify query results into
+   `data/last_pull.json`,
+5. run `python3 scripts/validate_data.py` — it must pass before anything is
+   committed (see below), and
+6. re-run the two scripts above.
+
+### Store check (important)
+
+The Shopify connector holds **one store at a time** and can silently point
+at a different store (in Oct/Nov 2026 it pointed at the Vanatari store for
+three weeks and the refresh committed that store's data). Every refresh must
+therefore:
+
+- call `get-shop-info` first and stop unless the store is **Vegavero**
+  (`vegavero.myshopify.com`), and
+- run `scripts/validate_data.py` before committing. It checks the recorded
+  store and that recent days have a normal number of inventory rows, SKU
+  sales rows and net sales; a pull from another store fails this check.
 
 ## Tuning
 

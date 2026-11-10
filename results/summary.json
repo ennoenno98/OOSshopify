@@ -1,21 +1,21 @@
 {
   "period": {
     "start": "2025-09-01",
-    "end": "2026-11-08"
+    "end": "2026-11-09"
   },
   "totals": {
-    "lost_revenue": 300422.57,
-    "lost_units": 16876.3,
-    "actual_revenue": 1498166.31,
-    "oos_rate": 0.1619,
-    "wisr": 0.8062,
-    "skus_affected": 135,
-    "episodes": 363
+    "lost_revenue": 298592.69,
+    "lost_units": 16780.9,
+    "actual_revenue": 1603005.51,
+    "oos_rate": 0.1534,
+    "wisr": 0.8155,
+    "skus_affected": 132,
+    "episodes": 358
   },
   "by_category": {
-    "Critically low": 7830.09,
-    "Demand gap": 8114.46,
-    "Physical": 284048.49,
-    "Suppressed sales (post-OOS)": 429.53
+    "Critically low": 9743.99,
+    "Demand gap": 8076.47,
+    "Physical": 280307.29,
+    "Suppressed sales (post-OOS)": 464.95
   }
 }
