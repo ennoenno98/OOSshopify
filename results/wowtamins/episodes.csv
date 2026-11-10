@@ -1,0 +1,50 @@
+sku,start,end,days,lost_units,lost_revenue,main_category,product_title
+SKU-WT-WKPz,2026-05-01,2026-05-21,21,219.02,6388.34,Demand gap,Kids Probio Sticks
+SKU-WT-WO3,2026-09-11,2026-10-19,39,311.42,6100.89,Demand gap,Omega-3 Gummies
+SKU-WT-WO3,2026-10-28,2026-11-09,13,81.53,1525.88,Demand gap,Omega-3 Gummies
+SKU-WT-WEGZ,2026-08-01,2026-08-04,4,117.29,1372.85,Demand gap,Iron Gummies
+SKU-WT-WKC,2025-12-25,2025-12-26,2,40.01,1093.38,Demand gap,Kids Complete Gummies
+SKU-WT-WO3,2026-10-21,2026-10-26,6,46.55,890.45,Demand gap,Omega-3 Gummies
+SKU-WT-WEGZ,2026-10-13,2026-10-14,2,50.79,604.10,Demand gap,Iron Gummies
+SKU-WT-WKMz,2025-12-24,2025-12-26,3,27.57,603.16,Suppressed sales (post-OOS),Kids Multi Gummies
+SKU-WT-WKMz,2025-12-14,2025-12-15,2,20.71,450.78,Demand gap,Kids Multi Gummies
+SKU-WT-WEGZ,2026-10-04,2026-10-04,1,30.44,362.63,Demand gap,Iron Gummies
+SKU-WT-WB12,2025-12-23,2025-12-28,6,24.01,358.88,Demand gap,Vitamin B12 Spray
+SKU-WT-WKPz,2026-05-25,2026-05-25,1,11.20,326.40,Demand gap,Kids Probio Sticks
+SKU-WT-WO3,2026-06-27,2026-06-28,2,16.65,326.01,Demand gap,Omega-3 Gummies
+SKU-WT-WO3,2026-07-28,2026-07-29,2,15.02,295.24,Demand gap,Omega-3 Gummies
+SKU-WT-WIG,2026-04-22,2026-04-23,2,12.84,266.81,Demand gap,Immun Gummies
+SKU-WT-WIG,2026-04-28,2026-04-29,2,12.16,252.82,Demand gap,Immun Gummies
+SKU-WT-WKPz,2026-08-13,2026-08-13,1,9.06,252.56,Demand gap,Kids Probio Sticks
+SKU-WT-WKPz,2026-01-23,2026-01-23,1,8.24,239.24,Demand gap,Kids Probio Sticks
+SKU-WT-WO3,2026-06-12,2026-06-12,1,10.83,211.98,Demand gap,Omega-3 Gummies
+SKU-WT-WO3,2026-05-24,2026-05-24,1,10.45,207.26,Demand gap,Omega-3 Gummies
+SKU-WT-WB12,2026-01-20,2026-01-23,4,12.72,190.82,Suppressed sales (post-OOS),Vitamin B12 Spray
+SKU-WT-WIG,2026-04-10,2026-04-10,1,8.06,166.95,Demand gap,Immun Gummies
+SKU-WT-WIG,2026-04-18,2026-04-18,1,7.62,158.40,Demand gap,Immun Gummies
+SKU-WT-WIG,2026-07-11,2026-07-12,2,7.81,154.39,Demand gap,Immun Gummies
+SKU-WT-WB12,2026-06-30,2026-07-01,2,8.84,133.35,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-07-28,2026-07-29,2,8.18,123.12,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-07-31,2026-08-01,2,8.13,122.37,Demand gap,Vitamin B12 Spray
+SKU-WT-WIG,2026-05-23,2026-05-23,1,5.78,118.80,Demand gap,Immun Gummies
+SKU-WT-WB12,2026-07-18,2026-07-19,2,7.63,114.60,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2025-11-10,2025-11-11,2,6.82,102.64,Demand gap,Vitamin B12 Spray
+SKU-WT-WIG,2026-07-29,2026-07-29,1,5.07,99.17,Demand gap,Immun Gummies
+SKU-WT-WIG,2026-07-31,2026-07-31,1,5.06,99.13,Demand gap,Immun Gummies
+SKU-WT-WIG,2026-07-07,2026-07-07,1,4.92,97.71,Demand gap,Immun Gummies
+SKU-WT-WIG,2026-06-27,2026-06-27,1,4.80,96.36,Demand gap,Immun Gummies
+SKU-WT-WB12,2026-06-25,2026-06-25,1,4.91,74.21,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-05-21,2026-05-21,1,4.79,73.28,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-07-12,2026-07-12,1,4.86,73.07,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-07-24,2026-07-24,1,4.74,71.13,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-04-05,2026-04-05,1,4.31,67.30,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-08-08,2026-08-08,1,4.37,65.83,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-08-12,2026-08-12,1,4.29,64.88,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2025-12-31,2025-12-31,1,4.23,63.61,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-10-07,2026-10-07,1,4.06,62.17,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-09-26,2026-09-26,1,4.03,61.68,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-08-15,2026-08-15,1,4.06,61.31,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-03-01,2026-03-01,1,3.84,59.71,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-08-17,2026-08-17,1,3.94,59.57,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2025-10-19,2025-10-19,1,3.82,57.99,Demand gap,Vitamin B12 Spray
+SKU-WT-WB12,2026-08-23,2026-08-23,1,3.83,57.91,Demand gap,Vitamin B12 Spray

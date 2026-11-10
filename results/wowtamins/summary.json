@@ -1,0 +1,21 @@
+{
+  "period": {
+    "start": "2025-09-01",
+    "end": "2026-11-09"
+  },
+  "totals": {
+    "lost_revenue": 24881.11,
+    "lost_units": 1241.3,
+    "actual_revenue": 2921116.44,
+    "oos_rate": 0.0298,
+    "wisr": 0.9907,
+    "skus_affected": 7,
+    "episodes": 49
+  },
+  "by_category": {
+    "Critically low": 0.0,
+    "Demand gap": 21999.52,
+    "Physical": 0.0,
+    "Suppressed sales (post-OOS)": 2881.6
+  }
+}

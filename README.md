@@ -98,6 +98,33 @@ therefore:
   store and that recent days have a normal number of inventory rows, SKU
   sales rows and net sales; a pull from another store fails this check.
 
+## Brands
+
+The app has a brand selector. Vegavero uses the top-level `data/` and
+`results/` folders; every other brand lives in `data/<brand>/` and
+`results/<brand>/`.
+
+| Brand | Sales source | Inventory history | Model |
+| --- | --- | --- | --- |
+| Vegavero | Shopify analytics (ShopifyQL) | yes, daily per SKU | all categories |
+| Wowtamins | Klar, shop "3.1.2 Wowtamins Shopify D2C" | **none** | sales-gap rules only |
+
+Refreshing Wowtamins: pull `calendar_date × product_sku` from Klar for the
+days since `data/wowtamins/last_pull.json` (windows of at most 30 days, the
+metrics are listed at the top of `scripts/build_wowtamins_data.py`), save
+each result as a JSON file in an empty folder, then
+
+```bash
+python3 scripts/build_wowtamins_data.py <folder with the Klar results>
+python3 scripts/oos_analytics.py --brand wowtamins
+```
+
+Because Wowtamins has no stock data, a day counts as out of stock only when
+a SKU that normally sells 3+ units a day sells none (Demand gap), plus the
+days until sales recover (Suppressed sales). A variant that was paused or
+discontinued on purpose is indistinguishable from a stock-out. The static
+`dashboard/index.html` shows Vegavero only.
+
 ## Tuning
 
 Every threshold (min demand λ, zero-run mask, days-of-supply cutoffs,

@@ -128,6 +128,24 @@ lost_revenue = lost_units × trailing-90d avg selling price per unit
   spikes; the ample-stock guard keeps their ordinary no-sale days out of the
   loss totals.
 
+## Brands without inventory history (Wowtamins)
+
+Wowtamins is modelled from sales only: daily units and revenue per SKU come
+from Klar (shop "3.1.2 Wowtamins Shopify D2C", B2B excluded); no source in
+this project holds its daily stock levels. Consequences:
+
+- **Physical** and **Critically low** never fire — both need a stock level.
+- A day is OOS only through the sales-based rules: **Demand gap** (zero units
+  on a day enclosed by sales, λ ≥ 3) and **Suppressed sales** (the bridged
+  days until sales reach half of λ again).
+- There is no ample-stock guard, so a variant that was paused or discontinued
+  on purpose and later sells a few units again is counted as a stock-out.
+- Units are ordered units by order date (Klar `gross_items`); revenue is
+  Klar net revenue without the shipping share. Klar days are UTC.
+- Free inserts and flyers (SKUs earning under €1 per item) are removed.
+
+Treat the Wowtamins figures as a lower-confidence estimate than Vegavero's.
+
 ## Deviations from the Amazon original
 
 | Original (Amazon) | Here (Shopify) | Why |

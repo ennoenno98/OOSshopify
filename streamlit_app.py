@@ -63,17 +63,20 @@ BRANDS = {
         "daily": RESULTS / "sku_daily.csv",
         "variants": REPO / "data" / "variants.csv",
         "site": "vegavero.com",
+        "source": "Shopify store",
         "note": None,
     },
     "Wowtamins": {
         "daily": RESULTS / "wowtamins" / "sku_daily.csv",
         "variants": REPO / "data" / "wowtamins" / "variants.csv",
         "site": "wowtamins.com",
-        "note": ("Wowtamins has no daily inventory history (order data via "
-                 "Matrixify only). Stock-outs are inferred from sales gaps: a "
-                 "day with zero units on a SKU that normally sells 3+ per "
-                 "day. Physical and Critically-low categories cannot occur, "
-                 "and a deliberately paused product looks like a stock-out."),
+        "source": "Klar · Wowtamins Shopify D2C",
+        "note": ("Wowtamins has no daily inventory history in this dashboard "
+                 "(sales come from Klar). Stock-outs are inferred from sales "
+                 "gaps: a day with zero units on a SKU that normally sells 3+ "
+                 "per day. Physical and Critically-low categories cannot "
+                 "occur, and a deliberately paused or discontinued variant "
+                 "looks like a stock-out."),
     },
 }
 BRANDS = {k: v for k, v in BRANDS.items() if v["daily"].exists()}
@@ -108,7 +111,7 @@ daily = load(brand, data_version(brand))
 MIN_D, MAX_D = daily["day"].min().date(), daily["day"].max().date()
 
 st.title(f"OOS lost revenue — {BRANDS[brand]['site']}")
-st.caption(f"Shopify store · data {MIN_D.strftime('%d.%m.%Y')} → "
+st.caption(f"{BRANDS[brand]['source']} · data {MIN_D.strftime('%d.%m.%Y')} → "
            f"{MAX_D.strftime('%d.%m.%Y')} · daily model · "
            "methodology: docs/METHODOLOGY.md")
 if BRANDS[brand]["note"]:
