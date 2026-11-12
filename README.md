@@ -14,6 +14,11 @@ or run the Streamlit app (below).
 committed `results/` files — no Shopify credentials needed; it updates
 whenever refreshed data is pushed to this repo.
 
+**Download PDF report** (button next to the filters) exports the view on
+screen — brand, period, granularity, top-N — as an A4 report with the KPIs,
+both charts, the worst offenders and the largest episodes. It is built by
+`pdf_report.py` with matplotlib only; nothing leaves the app.
+
 Run locally:
 
 ```bash

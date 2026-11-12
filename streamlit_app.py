@@ -118,11 +118,13 @@ if BRANDS[brand]["note"]:
     st.info(BRANDS[brand]["note"])
 
 # ---- filters: period picker + granularity ------------------------------
-fc1, fc2, _ = st.columns([1, 1, 2])
+fc1, fc2, fc3 = st.columns([1, 1, 2])
 sel = fc1.date_input(
     "Period", value=(MIN_D, MAX_D), min_value=MIN_D, max_value=MAX_D,
     format="DD.MM.YYYY", key=f"period_{brand}")  # each brand keeps its own range
 grain = fc2.radio("Granularity", ["Weekly", "Monthly"], horizontal=True)
+fc3.write("")  # line the button up with the inputs, which carry a label
+pdf_slot = fc3.empty()  # filled at the end, once everything is computed
 if len(sel) != 2:  # calendar open, end date not picked yet
     st.info("Pick an end date in the calendar.")
     st.stop()
@@ -259,6 +261,7 @@ st.dataframe(
     })
 
 st.subheader("Largest OOS episodes")
+ep = None
 if len(oos_only):
     ep = (oos_only.groupby(["sku", "episode"])
           .agg(product_title=("product_title", "first"),
@@ -283,7 +286,7 @@ if len(oos_only):
 else:
     st.info("No OOS episodes in the selected period.")
 
-st.caption(
+METHOD = (
     "Method: λ = trailing-90-day units per live day (pre-launch days and "
     "≥7-day zero-runs masked, frozen through outages). A SKU-day is OOS when "
     "stock ≤ 0 (Physical), days-of-supply < 2 (Critically low), or a "
@@ -293,3 +296,27 @@ st.caption(
     "with >15 days of stock cover are ordinary demand variation, never "
     "counted. Episodes touching the period edges are clipped to the period. "
     "Data refresh: re-pull via Claude, re-run scripts/, push.")
+st.caption(METHOD)
+
+
+# ---- PDF report of exactly this view -------------------------------------
+@st.cache_data(max_entries=8, show_spinner="Preparing PDF…")
+def pdf_bytes(brand: str, version: tuple, start, end, grain: str, top_n: int,
+              _view: dict) -> bytes:
+    # the key arguments fully determine _view, so it is not hashed
+    from pdf_report import build_pdf
+    return build_pdf(**_view)
+
+
+pdf_slot.download_button(
+    "Download PDF report",
+    data=pdf_bytes(brand, data_version(brand), start, end, grain, top_n, dict(
+        site=BRANDS[brand]["site"], source=BRANDS[brand]["source"],
+        note=BRANDS[brand]["note"], start=start, end=end, grain=grain,
+        kpis=kpis, lost=long, wisr=wisr_df, bucket=tcol, skus=sku_tbl,
+        episodes=ep, cats=CATS, colors=CAT_COLORS,
+        method=METHOD.split(" Data refresh:")[0])),
+    file_name=(f"oos_report_{brand.lower()}_{start:%Y%m%d}_{end:%Y%m%d}"
+               f"_{grain.lower()}.pdf"),
+    mime="application/pdf",
+    help="This view as a PDF: KPIs, both charts, top SKUs and episodes.")
